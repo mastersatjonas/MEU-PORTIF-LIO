@@ -36,6 +36,7 @@ header .interface {
 header .logo img {
     width: 95px;
     margin-left: 7px;
+    border-radius: 20px;
 }
 
 /*Estilo do menu dinâmico*/
@@ -55,6 +56,7 @@ header.rolar .menu-desktop nav ul li a {
 
 header.rolar .logo .logo-branca {
     display: none;
+   
 }
 
 header.rolar .logo .logo-preta {
@@ -225,6 +227,7 @@ section.hero-site {
     height: 200px;
     border-radius: 50%;
     margin-bottom: 25px;
+    margin-top: 20%;
 }
 
 .hero-site .txt-hero h1 {
