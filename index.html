@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Jonas Fernandes - Desenvolvedor Fullstack especializado em soluções web inovadoras">
+    <meta name="keywords" content="desenvolvedor fullstack, programador, web design, frontend, backend, HTML, CSS, JavaScript">
+    <meta name="author" content="Jonas Fernandes">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/Logo.png" type="image/png">
 
     <!-- CSS Web -->
     <link rel="stylesheet" href="styles.css">
@@ -13,52 +18,72 @@
     <link rel="stylesheet" href="responsividade.css" media="screen">
     <!-- /CSS Web mobile responsive -->
 
-    <!-- Google fonts -- 1 -->
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
         rel="stylesheet">
-    <!-- /Google fonts-- 1 -->
-
-    <!-- Google fonts-- 2 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Poppins:wght@400;600;700&display=swap"
         rel="stylesheet">
-    <!-- /Google fonts-- 2 -->
+    <!-- /Google fonts-->
 
-    <!-- Bootstrap icons-->
+    <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- /Bootstrap icons-->
+    <!-- /Bootstrap icons -->
 
-    <title>Fernandesdev</title>
+    <!-- AOS - Animate On Scroll Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- /AOS -->
+
+    <title>Jonas Fernandes | Desenvolvedor Fullstack</title>
+
+    <!-- Estilos para Dark Mode (exemplo) -->
+    <style>
+        /* Modo claro (padrão) */
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        /* Modo escuro */
+        .dark-mode {
+            background-color: #212121;
+            color: #e3e3e3;
+        }
+        /* Você pode ajustar outros elementos se necessário */
+    </style>
 </head>
-
 <body>
+    <!-- Botão Voltar ao Topo -->
+    <a href="#" class="volta-topo" id="btnTopo">
+        <i class="bi bi-arrow-up-circle-fill"></i>
+    </a>
 
     <header id="header">
-
         <div class="interface">
             <section class="logo">
-                <img class="logo-branca" src="./img/Logo.png" alt="logo">
+                <img class="logo-branca" src="./img/Logo.png" alt="Logo Jonas Fernandes Developer">
             </section>
 
             <section class="menu-desktop">
                 <nav>
                     <ul>
-                        <li><a href="#">Inícil</a></li>
-                        <li><a href="#Projetos">Projetos</a></li>
-                        <li><a href="#footer">Opções de contato</a></li>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#footer">Contato</a></li>
                     </ul>
                 </nav>
             </section>
 
             <section class="btn-contato">
-                <a href="https://wa.me/5563992354732?text=Olá! Obrigado por entrar em contato conosco. Em que posso ajudar?."
+                <a href="https://wa.me/5563992354732?text=Olá! Vi seu portfólio e gostaria de conversar sobre um projeto."
                     target="_blank">
-                    <button type=" button">Contato</button>
+                    <button type="button">Contato</button>
                 </a>
             </section>
 
@@ -73,67 +98,255 @@
 
                 <nav>
                     <ul>
-                        <li><a href="#">Inícil</a></li>
-                        <li><a href="#Projetos">Projetos</a></li>
-                        <li><a href="#footer">Opções de contato</a></li>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#footer">Contato</a></li>
                     </ul>
                 </nav>
             </section>
             <div class="overlay-menu" id="overlay-menu"></div>
         </div>
-
     </header>
 
     <section class="hero-site">
-
         <div class="interface">
-            <div class="txt-hero">
-                <img src="./img/Jonas.png" class="img-jonas" alt="">
+            <div class="txt-hero" data-aos="fade-right" data-aos-duration="1000">
+                <img src="./img/Jonas.png" class="img-jonas" alt="Foto de Jonas Fernandes">
                 <h1>
-                    Olá! Eu sou FERNANDES JONAS, um desenvolvedor fullstack apaixonado por criar soluções inovadoras.
-                    Navegue pelo meu portfólio e veja o que eu tenho para oferecer!"<span> Dev Fullstack</span>
+                    Olá! Eu sou <span>JONAS FERNANDES</span>, um desenvolvedor fullstack apaixonado por criar soluções inovadoras.
                 </h1>
-                <p>O dev full stack é uma pessoa com o perfil multidisciplinar, que possui habilidades para atuar em
-                    diferentes partes de um projeto.
-                    O dev full stack dominam o desenvolvimento front-end e back-end.
+                <p>
+                    Especializado em desenvolvimento front-end e back-end, tenho habilidades para atuar em diferentes 
+                    partes de um projeto, criando experiências completas e eficientes.
                 </p>
 
-                <a href="https://wa.me/5563992354732?text=Olá! Obrigado por entrar em contato conosco. Em que posso ajudar?."
-                    target="_blank">
-                    <button class="button-btn" type="button"> WhatsApp</button>
-                </a>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/5563992354732?text=Olá! Vi seu portfólio e gostaria de conversar sobre um projeto."
+                        target="_blank">
+                        <button class="button-btn" type="button"><i class="bi bi-whatsapp"></i> WhatsApp</button>
+                    </a>
+                    <a href="#" class="download-cv">
+                        <button class="button-btn secondary" type="button"><i class="bi bi-file-earmark-arrow-down"></i> Download CV</button>
+                    </a>
+                </div>
             </div>
 
-            <div class="txt-hero-1">
-                <img src="./img/img-3.png" alt="imagem de codigos">
+            <div class="txt-hero-1" data-aos="fade-left" data-aos-duration="1000">
+                <img src="./img/img-3.png" alt="Imagem representando códigos de programação">
             </div>
-
         </div>
     </section>
 
+    <!-- Seção Sobre -->
+    <section class="sobre" id="sobre">
+        <div class="interface">
+            <div class="titulo-secao" data-aos="fade-up">
+                <h2>Sobre <span>Mim</span></h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="conteudo-sobre">
+                <div class="foto-sobre" data-aos="fade-right">
+                    <img src="./img/Jonas.png" alt="Foto de Jonas Fernandes">
+                </div>
+                
+                <div class="texto-sobre" data-aos="fade-left">
+                    <h3>Quem sou <span>eu?</span></h3>
+                    <p>
+                        Sou um desenvolvedor Web dedicado a criar soluções web eficientes e inovadoras. Com experiência em diversas tecnologias
+                        front-end e back-end, estou sempre em busca de novos desafios e aprendizados.
+                    </p>
+                    <p>
+                        Minha jornada na programação começou com HTML, CSS e JavaScript, e desde então tenho expandido constantemente meus conhecimentos
+                        para incluir frameworks modernos e metodologias ágeis de desenvolvimento.
+                    </p>
+                    <p>
+                        Acredito que a tecnologia tem o poder de transformar realidades, e meu objetivo é criar aplicações
+                        que proporcionem experiências significativas para os usuários.
+                    </p>
+                    
+                    <div class="info-pessoal">
+                        <div class="info-item">
+                            <strong><i class="bi bi-envelope"></i> Email:</strong>
+                            <span>fernandesfernandesjonas21@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <strong><i class="bi bi-geo-alt"></i> Localização:</strong>
+                            <span>Tocantins, Brasil</span>
+                        </div>
+                        <div class="info-item">
+                            <strong><i class="bi bi-translate"></i> Idiomas:</strong>
+                            <span>Português (Nativo), Inglês (Básico)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Habilidades -->
+    <section class="habilidades" id="habilidades">
+        <div class="interface">
+            <div class="titulo-secao" data-aos="fade-up">
+                <h2>Minhas <span>Habilidades</span></h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="bi bi-code-slash"></i> Front-end</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon html">
+                                <i class="bi bi-filetype-html"></i>
+                            </div>
+                            <h4>HTML5</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon css">
+                                <i class="bi bi-filetype-css"></i>
+                            </div>
+                            <h4>CSS3</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon js">
+                                <i class="bi bi-filetype-js"></i>
+                            </div>
+                            <h4>JavaScript</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon bootstrap">
+                                <i class="bi bi-bootstrap"></i>
+                            </div>
+                            <h4>Bootstrap</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+               <!-- <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="bi bi-server"></i> Back-end</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon node">
+                                <i class="bi bi-filetype-jsx"></i>
+                            </div>
+                            <h4>Node.js</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon php">
+                                <i class="bi bi-filetype-php"></i>
+                            </div>
+                            <h4>PHP</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon sql">
+                                <i class="bi bi-database"></i>
+                            </div>
+                            <h4>MySQL</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon api">
+                                <i class="bi bi-braces"></i>
+                            </div>
+                            <h4>API REST</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3><i class="bi bi-tools"></i> Ferramentas & Outros</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon git">
+                                <i class="bi bi-git"></i>
+                            </div>
+                            <h4>Git</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon responsive">
+                                <i class="bi bi-phone"></i>
+                            </div>
+                            <h4>Design Responsivo</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon figma">
+                                <i class="bi bi-vector-pen"></i>
+                            </div>
+                            <h4>Figma</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 65%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon seo">
+                                <i class="bi bi-search"></i>
+                            </div>
+                            <h4>SEO</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato Rápido -->
     <section class="contato">
         <div class="interface">
-            <article class="txt-contato">
+            <article class="txt-contato" data-aos="fade-up">
                 <h3>
                     <span>Entre em contato</span> agora mesmo.
                 </h3>
-                <p>obtenha Informações comigo entrando em contato</p>
+                <p>Tire suas dúvidas e solicite um orçamento sem compromisso</p>
             </article>
 
-            <article class="icons-contato">
-                <a href="https://wa.me/5563992354732?text=Olá! Obrigado por entrar em contato conosco. Em que posso ajudar?."
-                    target="_blank">
+            <article class="icons-contato" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://wa.me/5563992354732?text=Olá! Vi seu portfólio e gostaria de conversar sobre um projeto." target="_blank">
                     <button type="button"><i class="bi bi-whatsapp"></i>
                         <p>WhatsApp</p>
                     </button>
                 </a>
-                <a href="fernandesfernandesjonas21@gmail.com">
-                    <button type="button"><i class="bi bi-envelope-at-fill"></i></i>
+                <a href="mailto:fernandesfernandesjonas21@gmail.com">
+                    <button type="button"><i class="bi bi-envelope-at-fill"></i>
                         <p>Enviar e-mail</p>
                     </button>
                 </a>
-                <a href="5563992354732">
-                    <button type="button"><i class="bi bi-telephone-fill"></i></i>
+                <a href="tel:+5563992354732">
+                    <button type="button"><i class="bi bi-telephone-fill"></i>
                         <p>Ligar agora</p>
                     </button>
                 </a>
@@ -141,100 +354,265 @@
         </div>
     </section>
 
-
-
-    <section class="Projetos" id="Projetos">
+    <!-- Seção Projetos -->
+     
+    <section class="projetos" id="projetos">
         <div class="interface">
+            <div class="titulo-secao" data-aos="fade-up">
+                <h2>Meus <span>Projetos</span></h2>
+                <div class="line"></div>
+            </div>
 
-            <div class="txt-funciona">
-                <h3>Projetos <span>Frontend</span> </h3>
+            <div class="filtro-projetos" data-aos="fade-up">
+                <button class="filtro-btn ativo" data-filter="todos">Todos</button>
+                <button class="filtro-btn" data-filter="web">Web</button>
+                <button class="filtro-btn" data-filter="app">Aplicativos</button>
+                <button class="filtro-btn" data-filter="design">Design</button>
             </div>
 
             <div class="instrucoes">
-
-                <article class="instru-box">
-
+                <article class="instru-box" data-aos="fade-up" data-aos-delay="100" data-category="web">
                     <div class="img-instru-box">
-                        <img src="./img/academia.png" alt="Academia">
+                        <img src="./img/academia.png" alt="Projeto Academia">
+                        <div class="overlay-projeto">
+                            <div class="projeto-links">
+                                <a href="#" target="_blank" class="btn-ver-projeto"><i class="bi bi-eye"></i> Ver Projeto</a>
+                                <a href="#" target="_blank" class="btn-ver-codigo"><i class="bi bi-code-slash"></i> Ver Código</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="txt-instru-box">
-                        <h4>Projeto <span>Academia.</span></h4>
-                        <p><i class="bi bi-filetype-html"></i>
+                        <h4>Projeto <span>Academia</span></h4>
+                        <p class="descricao-projeto">
+                            Site completo para academia com área de membros, agendamento de aulas e planos de treinamento personalizados.
+                        </p>
+                        <div class="tecnologias-usadas">
+                            <i class="bi bi-filetype-html"></i>
                             <i class="bi bi-filetype-css"></i>
                             <i class="bi bi-filetype-js"></i>
                             <i class="bi bi-bootstrap"></i>
-                        </p>
+                        </div>
                     </div>
 
                 </article>
 
-                <article class="instru-box">
-
+                <article class="instru-box" data-aos="fade-up" data-aos-delay="200" data-category="web design">
                     <div class="img-instru-box">
-                        <img src="./img/mario.png" alt="mario">
+                        <img src="./img/mario.png" alt="Projeto Mario Bros">
+                        <div class="overlay-projeto">
+                            <div class="projeto-links">
+                                <a href="#" target="_blank" class="btn-ver-projeto"><i class="bi bi-eye"></i> Ver Projeto</a>
+                                <a href="#" target="_blank" class="btn-ver-codigo"><i class="bi bi-code-slash"></i> Ver Código</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="txt-instru-box">
-                        <h4>Projeto <span>Mario Bros.</span></h4>
-                        <p><i class="bi bi-filetype-html"></i>
+                        <h4>Projeto <span>Mario Bros</span></h4>
+                        <p class="descricao-projeto">
+                            Landing page inspirada no universo do Mario Bros, com animações interativas e design responsivo.
+                        </p>
+                        <div class="tecnologias-usadas">
+                            <i class="bi bi-filetype-html"></i>
                             <i class="bi bi-filetype-css"></i>
                             <i class="bi bi-filetype-js"></i>
                             <i class="bi bi-bootstrap"></i>
-                        </p>
+                        </div>
                     </div>
-
                 </article>
 
-                <article class="instru-box">
-
+                <article class="instru-box" data-aos="fade-up" data-aos-delay="200" data-category="web design">
                     <div class="img-instru-box">
-                        <img src="./img/conversor de moedas.png" alt="conversor-de-moedas ">
+                        <img src="./img/site Gej.png" alt="Site da G&J refrigeração">
+                        <div class="overlay-projeto">
+                            <div class="projeto-links">
+                                <a href="#" target="_blank" class="btn-ver-projeto"><i class="bi bi-eye"></i> Ver Projeto</a>
+                                <a href="#" target="_blank" class="btn-ver-codigo"><i class="bi bi-code-slash"></i> Ver Código</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="txt-instru-box">
-                        <h4>Projeto <span>Conversor de Moedas.</span></h4>
-                        <p><i class="bi bi-filetype-html"></i>
+                        <h4>Projeto <span>Pagina de Apresentação da empresa G&J Refrigeração</span></h4>
+                        <p class="descricao-projeto">
+                            Landing page inspirada no dia a dia de Trabalho e feedback dos clientes, com animações interativas e design responsivo.
+                        </p>
+                        <div class="tecnologias-usadas">
+                            <i class="bi bi-filetype-html"></i>
                             <i class="bi bi-filetype-css"></i>
                             <i class="bi bi-filetype-js"></i>
                             <i class="bi bi-bootstrap"></i>
-                        </p>
+                        </div>
                     </div>
-
                 </article>
 
-                <article class="instru-box">
-
+                <article class="instru-box" data-aos="fade-up" data-aos-delay="200" data-category="web design">
                     <div class="img-instru-box">
-                        <img src="./img/pizzaria.png" alt=" pizzaria">
+                        <img src="./img/portifolio.png" alt="Portfólio">
+                        <div class="overlay-projeto">
+                            <div class="projeto-links">
+                                <a href="#" target="_blank" class="btn-ver-projeto"><i class="bi bi-eye"></i> Ver Projeto</a>
+                                <a href="#" target="_blank" class="btn-ver-codigo"><i class="bi bi-code-slash"></i> Ver Código</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="txt-instru-box">
-                        <h4>Projeto <span>Pizzaria.</span></h4>
-                        <p><i class="bi bi-filetype-html"></i>
+                        <h4>Projeto <span>Pagina de Apresentação do Proficional</span></h4>
+                        <p class="descricao-projeto">
+                            Landing page do Proficional, com animações interativas e design responsivo.
+                        </p>
+                        <div class="tecnologias-usadas">
+                            <i class="bi bi-filetype-html"></i>
                             <i class="bi bi-filetype-css"></i>
                             <i class="bi bi-filetype-js"></i>
-                        </p>
+                            <i class="bi bi-bootstrap"></i>
+                        </div>
                     </div>
-
                 </article>
+
+                <article class="instru-box" data-aos="fade-up" data-aos-delay="300" data-category="app">
+                    <div class="img-instru-box">
+                        <img src="./img/conversor de moedas.png" alt="Projeto Conversor de Moedas">
+                        <div class="overlay-projeto">
+                            <div class="projeto-links">
+                                <a href="#" target="_blank" class="btn-ver-projeto"><i class="bi bi-eye"></i> Ver Projeto</a>
+                                <a href="#" target="_blank" class="btn-ver-codigo"><i class="bi bi-code-slash"></i> Ver Código</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txt-instru-box">
+                        <h4>Projeto <span>Conversor de Moedas</span></h4>
+                        <p class="descricao-projeto">
+                            Aplicativo web que permite converter valores entre diferentes moedas internacionais utilizando API de taxas de câmbio em tempo real.
+                        </p>
+                        <div class="tecnologias-usadas">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-css"></i>
+                            <i class="bi bi-filetype-js"></i>
+                            <i class="bi bi-bootstrap"></i>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="instru-box" data-aos="fade-up" data-aos-delay="400" data-category="web design">
+                    <div class="img-instru-box">
+                        <img src="./img/pizzaria.png" alt="Projeto Pizzaria">
+                        <div class="overlay-projeto">
+                            <div class="projeto-links">
+                                <a href="#" target="_blank" class="btn-ver-projeto"><i class="bi bi-eye"></i> Ver Projeto</a>
+                                <a href="#" target="_blank" class="btn-ver-codigo"><i class="bi bi-code-slash"></i> Ver Código</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txt-instru-box">
+                        <h4>Projeto <span>Pizzaria</span></h4>
+                        <p class="descricao-projeto">
+                            Site para pizzaria com sistema de pedidos online, cardápio interativo e integração para entrega.
+                        </p>
+                        <div class="tecnologias-usadas">
+                            <i class="bi bi-filetype-html"></i>
+                            <i class="bi bi-filetype-css"></i>
+                            <i class="bi bi-filetype-js"></i>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section class="formulario-contato" id="formulario">
+        <div class="interface">
+            <div class="titulo-secao" data-aos="fade-up">
+                <h2>Fale <span>Comigo</span></h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="contato-container">
+                <div class="contato-info" data-aos="fade-right">
+                    <h3>Informações de Contato</h3>
+                    <p>Preencha o formulário ao lado e entrarei em contato o mais breve possível.</p>
+                    
+                    <div class="info-item">
+                        <i class="bi bi-telephone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(63) 99235-4732</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="bi bi-envelope"></i>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>fernandesfernandesjonas21@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="bi bi-geo-alt"></i>
+                        <div>
+                            <h4>Localização</h4>
+                            <p>Tocantins, Brasil</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-media">
+                        <a href="https://www.instagram.com/cjonasfernandes/" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/jonas-fernandes-costa-7b7971279/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/mastersatjonas" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61562694578143" target="_blank"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contato-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="assunto">Assunto</label>
+                            <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem" required>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-enviar">Enviar Mensagem <i class="bi bi-send"></i></button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="contato">
         <div class="interface">
-            <article class="txt-contato">
+            <article class="txt-contato" data-aos="fade-up">
                 <h3>
                     Opções de contato <span>para falar comigo</span>
                 </h3>
-                <p>e obter Informações agora mesmo.</p>
+                <p>e obter informações agora mesmo.</p>
             </article>
 
-            <article class="icons-contato">
-                <a href="https://wa.me/5563992354732?text=Olá! Obrigado por entrar em contato conosco. Em que posso ajudar?."
-                    target="_blank">
+            <article class="icons-contato" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://wa.me/5563992354732?text=Olá! Vi seu portfólio e gostaria de conversar sobre um projeto." target="_blank">
                     <button type="button"><i class="bi bi-whatsapp"></i>
                         <p>WhatsApp</p>
                     </button>
                 </a>
-                <a href="fernandesfernandesjonas21@gmail.com">
+                <a href="mailto:fernandesfernandesjonas21@gmail.com">
                     <button type="button"><i class="bi bi-envelope-at-fill"></i>
                         <p>Enviar e-mail</p>
                     </button>
@@ -245,11 +623,11 @@
                     </button>
                 </a>
                 <a href="https://www.instagram.com/cjonasfernandes/" target="_blank">
-                    <button type=" button"><i class="bi bi-instagram"></i>
+                    <button type="button"><i class="bi bi-instagram"></i>
                         <p>Instagram</p>
                     </button>
                 </a>
-                <a href="#">
+                <a href="#formulario">
                     <button type="button"><i class="bi bi-ui-checks"></i>
                         <p>Formulário</p>
                     </button>
@@ -267,34 +645,118 @@
                 <a href="https://www.linkedin.com/in/jonas-fernandes-costa-7b7971279/" target="_blank">
                     <button><i class="bi bi-linkedin"></i></button>
                 </a>
+                <a href="https://github.com/mastersatjonas" target="_blank">
+                    <button><i class="bi bi-github"></i></button>
+                </a>
                 <a href="https://www.facebook.com/profile.php?id=61562694578143" target="_blank">
                     <button><i class="bi bi-facebook"></i></button>
                 </a>
-                <a href="https://wa.me/5563992354732?text=Olá! Obrigado por entrar em contato conosco. Em que posso ajudar?."
-                    target="_blank">
+                <a href="https://wa.me/5563992354732?text=Olá! Vi seu portfólio e gostaria de conversar sobre um projeto." target="_blank">
                     <button><i class="bi bi-whatsapp"></i></button>
                 </a>
-
             </section>
 
             <section class="middle-footer">
-                <a href="https://wa.me/5563992354732" target="_blank">Suporte</a>
-                <a href="https://wa.me/5563992354732?text=Olá! Obrigado por entrar em contato conosco. Em que posso ajudar?."
-                    target="_blank">Informações</a>
-                <a href="https://wa.me/5563992354732" target="_blank">Marketing</a>
+                <a href="#" class="footer-link">Início</a>
+                <a href="#sobre" class="footer-link">Sobre</a>
+                <a href="#habilidades" class="footer-link">Habilidades</a>
+                <a href="#projetos" class="footer-link">Projetos</a>
+                <a href="#formulario" class="footer-link">Contato</a>
             </section>
 
             <section class="bottom-footer">
-                <p>FernadesDev 2024 &copy; Todos os direitos reservados</p>
+                <p>&copy; 2024 Jonas Fernandes Dev. Todos os direitos reservados.</p>
             </section>
         </div>
     </footer>
 
-    <!--Scripts de JS-->
+    <!-- Inclusão de bibliotecas e scripts externos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scriptmenu.js" defer></script>
     <script src="scriptbutton.js" defer></script>
-    <!--/Scripts de JS-->
+    
+    <!-- Script para inicializar AOS e demais funcionalidades -->
+    <script>
+        // Inicializa AOS
+        AOS.init();
 
+        // Botão Voltar ao Topo
+        window.onscroll = function() {
+            const btnTopo = document.getElementById("btnTopo");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btnTopo.style.display = "flex";
+            } else {
+                btnTopo.style.display = "none";
+            }
+        };
+
+        // Exemplo de Filtro de Projetos
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filtro-btn');
+            const projetos = document.querySelectorAll('.instru-box');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove a classe "ativo" de todos os botões
+                    filterBtns.forEach(b => b.classList.remove('ativo'));
+                    // Adiciona a classe "ativo" no botão clicado
+                    btn.classList.add('ativo');
+
+                    const filterValue = btn.getAttribute('data-filter');
+                    projetos.forEach(projeto => {
+                        if (filterValue === 'todos') {
+                            projeto.style.display = 'block';
+                        } else {
+                            if (projeto.getAttribute('data-category').includes(filterValue)) {
+                                projeto.style.display = 'block';
+                            } else {
+                                projeto.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+        });
+
+        // Modo Escuro (Dark Mode) - Cria e adiciona o botão ao carregar o DOM
+        document.addEventListener('DOMContentLoaded', () => {
+            const darkModeToggle = document.createElement('button');
+            darkModeToggle.classList.add('dark-mode-toggle');
+            
+            // Verifica se o modo escuro está habilitado no localStorage
+            const darkModeEnabled = localStorage.getItem('darkMode') === 'enabled';
+            if (darkModeEnabled) {
+                document.body.classList.add('dark-mode');
+                darkModeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
+            } else {
+                darkModeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
+            }
+            
+            // Estilização do botão (ajuste conforme sua preferência ou mova para o CSS)
+            darkModeToggle.style.position = 'fixed';
+            darkModeToggle.style.top = '20px';
+            darkModeToggle.style.right = '20px';
+            darkModeToggle.style.background = 'none';
+            darkModeToggle.style.border = 'none';
+            darkModeToggle.style.fontSize = '1.5rem';
+            darkModeToggle.style.cursor = 'pointer';
+            darkModeToggle.style.zIndex = '1000';
+
+            // Adiciona o botão ao body
+            document.body.appendChild(darkModeToggle);
+
+            // Alterna o modo escuro ao clicar
+            darkModeToggle.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                if (document.body.classList.contains('dark-mode')) {
+                    localStorage.setItem('darkMode', 'enabled');
+                    darkModeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
+                } else {
+                    localStorage.setItem('darkMode', 'disabled');
+                    darkModeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
+                }
+            });
+        });
+    </script>
 </body>
-
 </html>

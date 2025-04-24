@@ -1,17 +1,31 @@
-let btnMenu = document.getElementById('btn-menu')
-let menu = document.getElementById('menu-mobile')
-let overlay = document.getElementById('overlay-menu')
+// scriptbutton.js
 
-// funcão para abrir menu mobile
-btnMenu.addEventListener("click", () => {
-    menu.classList.add('abrir-menu')
-})
+// Alternar menu mobile
+const btnAbrirMenu = document.querySelector('.btn-abrir-menu');
+const menuMobile = document.querySelector('.menu-mobile');
 
-// funcão para fechar menu mobile
-menu.addEventListener("click", () => {
-    menu.classList.remove('abrir-menu')
-})
-// funcão no overlay para fechar menu mobile
-overlay.addEventListener("click", () => {
-    menu.classList.remove('abrir-menu')
-})
+btnAbrirMenu.addEventListener('click', () => {
+  menuMobile.classList.toggle('ativo');
+});
+
+// Alternar texto do botão
+const botaoTrocarTexto = document.getElementById('botaoTrocar');
+
+botaoTrocarTexto.addEventListener('click', function () {
+  this.textContent = this.textContent === 'Iniciar' ? 'Parar' : 'Iniciar';
+});
+
+// Recarregar a página ao clicar no botão
+const botaoRecarregar = document.getElementById('botaoRecarregar');
+
+botaoRecarregar.addEventListener('click', () => {
+  window.location.reload();
+});
+const toggleBtn = document.getElementById('theme-toggle');
+let darkMode = false;
+
+toggleBtn.addEventListener('click', () => {
+  darkMode = !darkMode;
+  document.body.className = darkMode ? 'dark-mode' : 'light-mode';
+  toggleBtn.textContent = darkMode ? '🌙' : '🌞';
+});
