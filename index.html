@@ -1,658 +1,661 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Jonas Fernandes - Desenvolvedor Fullstack especializado em soluções web inovadoras">
-    <meta name="keywords" content="desenvolvedor fullstack, programador, web design, frontend, backend, HTML, CSS, JavaScript">
-    <meta name="author" content="Jonas Fernandes">
-
-    <!-- Favicon -->
-    <link rel="icon" href="./img/Logo.png" type="image/png">
-
-    <!-- CSS Web -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- /CSS Web -->
-
-    <!-- CSS mobile responsive -->
-    <link rel="stylesheet" href="responsividade.css" media="screen">
-    <!-- /CSS Web mobile responsive -->
-
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Poppins:wght@400;600;700&display=swap"
-        rel="stylesheet">
-    <!-- /Google fonts-->
-
-    <!-- Bootstrap icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- /Bootstrap icons -->
-
-    <!-- AOS - Animate On Scroll Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- /AOS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Portfólio de Jonas Fernandes - Desenvolvedor Fullstack especializado em soluções web inovadoras" />
+    <meta name="keywords"
+        content="desenvolvedor fullstack, programador, web design, frontend, backend, HTML, CSS, JavaScript" />
+    <meta name="author" content="Jonas Fernandes" />
 
     <title>Jonas Fernandes | Desenvolvedor Fullstack</title>
+    <!--estilos-->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="icon" href="./img/Logo.png" type="image/png" />
 
-    <!-- Estilos para Dark Mode (exemplo) -->
-    <style>
-        /* Modo claro (padrão) */
-        body {
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        /* Modo escuro */
-        .dark-mode {
-            background-color: #212121;
-            color: #e3e3e3;
-        }
-        /* Você pode ajustar outros elementos se necessário */
-    </style>
+    <!-- Google Fonts Exo Space -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2+Space:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- AOS Animate On Scroll CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+
 </head>
+
 <body>
-    <!-- Botão Voltar ao Topo -->
-    <a href="#" class="volta-topo" id="btnTopo">
-        <i class="bi bi-arrow-up-circle-fill"></i>
+    <!-- Botão voltar ao topo -->
+    <a href="#" class="volta-topo" id="btnTopo" aria-label="Voltar ao topo">
+        <i class="bi bi-arrow-up-circle-fill" aria-hidden="true"></i>
     </a>
 
-    <header id="header">
+    <!-- Header melhorado -->
+    <header id="header" role="banner">
         <div class="interface">
             <section class="logo">
-                <img class="logo-branca" src="./img/Logo.png" alt="Logo Jonas Fernandes Developer">
+                <img class="logo-branca" src="./img/Logo.png" alt="Logo Jonas Fernandes Developer" width="60"
+                    height="60" />
+                <div class="logo-text">
+                    <span class="nome">Jonas Fernandes</span>
+                    <span class="subtitulo">Full Stack Developer</span>
+                </div>
             </section>
 
-            <section class="menu-desktop">
+            <section class="menu-desktop" role="navigation" aria-label="Menu principal">
                 <nav>
                     <ul>
-                        <li><a href="#">Início</a></li>
+                        <li><a href="#" class="active">Início</a></li>
                         <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#habilidades">Habilidades</a></li>
                         <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#footer">Contato</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
                 </nav>
             </section>
 
-            <section class="btn-contato">
-                <a href="https://wa.me/5563992354732?text=Olá! Vi seu portfólio e gostaria de conversar sobre um projeto."
-                    target="_blank">
-                    <button type="button">Contato</button>
-                </a>
-            </section>
+            <div class="header-actions">
 
-            <div class="btn-abrir-menu" id="btn-menu">
-                <i class="bi bi-list"></i>
+
+                <section class="btn-contato">
+                    <a href="https://wa.me/5563992354732?text=Olá! Vi seu portfólio e gostaria de conversar sobre um projeto."
+                        target="_blank" rel="noopener noreferrer">
+                        <button type="button" aria-label="Contato via WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                            <span>Contato</span>
+                        </button>
+                    </a>
+                </section>
+
+                <div class="btn-abrir-menu" id="btn-menu" role="button" tabindex="0" aria-label="Abrir menu">
+                    <i class="bi bi-list" aria-hidden="true"></i>
+                </div>
             </div>
 
-            <section class="menu-mobile" id="menu-mobile">
-                <div class="btn-fechar">
-                    <i class="bi bi-x-lg"></i>
+            <section class="menu-mobile" id="menu-mobile" role="navigation" aria-label="Menu mobile">
+                <div class="menu-mobile-header">
+                    <div class="menu-mobile-logo">
+                        <img src="./img/Logo.png" alt="Logo" />
+                        <span>Menu</span>
+                    </div>
+                    <div class="btn-fechar" id="btn-fechar" role="button" tabindex="0" aria-label="Fechar menu">
+                        <i class="bi bi-x-lg" aria-hidden="true"></i>
+                    </div>
                 </div>
 
                 <nav>
                     <ul>
-                        <li><a href="#">Início</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#habilidades">Habilidades</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#footer">Contato</a></li>
+                        <li><a href="#" class="menu-link">Início</a></li>
+                        <li><a href="#sobre" class="menu-link">Sobre</a></li>
+                        <li><a href="#habilidades" class="menu-link">Habilidades</a></li>
+                        <li><a href="#projetos" class="menu-link">Projetos</a></li>
+                        <li><a href="#contato" class="menu-link">Contato</a></li>
                     </ul>
                 </nav>
+
+                <div class="menu-mobile-footer">
+                    <p>Conecte-se comigo</p>
+                    <div class="menu-mobile-social">
+                        <a href="https://www.instagram.com/cjonasfernandes/" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jonas-fernandes-costa-7b7971279/" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/mastersatjonas" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </div>
             </section>
+
             <div class="overlay-menu" id="overlay-menu"></div>
         </div>
     </header>
 
-    <section class="hero-site">
-        <div class="interface">
-            <div class="txt-hero" data-aos="fade-right" data-aos-duration="1000">
-                <img src="./img/Jonas.png" class="img-jonas" alt="Foto de Jonas Fernandes">
-                <h1>
-                    Olá! Eu sou <span>JONAS FERNANDES</span>, um desenvolvedor fullstack apaixonado por criar soluções inovadoras.
-                </h1>
-                <p>
-                    Especializado em desenvolvimento front-end e back-end, tenho habilidades para atuar em diferentes 
-                    partes de um projeto, criando experiências completas e eficientes.
-                </p>
+    <main>
+        <!-- Seção Hero -->
+        <section class="hero-site" role="region" aria-label="Introdução">
+            <div class="interface">
+                <div class="txt-hero" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="./img/Jonas.png" class="img-jonas" alt="Foto de Jonas Fernandes" width="100"
+                        height="100" />
+                    <h1>
+                        Olá! Eu sou <span>JONAS FERNANDES</span>, um desenvolvedor fullstack apaixonado por criar
+                        soluções inovadoras.
+                    </h1>
+                    <p>
+                        Especializado em desenvolvimento front-end e back-end, tenho habilidades para atuar em
+                        diferentes partes de um projeto, criando experiências completas e eficientes.
+                    </p>
 
-                <div class="hero-buttons">
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/5563992354732?text=Olá! Vi seu portfólio e gostaria de conversar sobre um projeto."
+                            target="_blank" rel="noopener noreferrer">
+                            <button class="button-btn" type="button" aria-label="Abrir WhatsApp">
+                                <i class="bi bi-whatsapp"></i> WhatsApp
+                            </button>
+                        </a>
+                        <a href="./Curriculo-Jonasdev.pdf" class="download-cv">
+                            <button class="button-btn secondary" type="button" aria-label="Download do CV">
+                                <i class="bi bi-file-earmark-arrow-down"></i> Download CV
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="txt-hero-1" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="./img/img-3.png" alt="Imagem representando códigos de programação" width="400"
+                        height="auto" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section class="sobre" id="sobre" role="region" aria-label="Sobre Jonas Fernandes">
+            <div class="interface">
+                <div class="titulo-secao" data-aos="fade-up">
+                    <h2>
+                        Sobre <span>Mim</span>
+                    </h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="conteudo-sobre" data-aos="fade-up">
+                    <div class="foto-sobre" data-aos="fade-right">
+                        <img src="./img/Jonas.png" alt="Foto de Jonas Fernandes" width="350" height="auto" />
+                    </div>
+
+                    <div class="texto-sobre" data-aos="fade-left">
+                        <h3>Quem sou <span>eu?</span></h3>
+                        <p>
+                            Sou um desenvolvedor Web dedicado a criar soluções web eficientes e inovadoras. Com
+                            experiência em diversas tecnologias front-end e back-end, estou sempre em busca de novos
+                            desafios e aprendizados.
+                        </p>
+                        <p>
+                            Minha jornada na programação começou com HTML, CSS e JavaScript, e desde então tenho
+                            expandido constantemente meus conhecimentos para incluir frameworks modernos e metodologias
+                            ágeis de desenvolvimento.
+                        </p>
+                        <p>
+                            Acredito que a tecnologia tem o poder de transformar realidades, e meu objetivo é criar
+                            aplicações que proporcionem experiências significativas para os usuários.
+                        </p>
+
+                        <div class="info-pessoal" aria-label="Informações pessoais">
+                            <div class="info-item">
+                                <strong><i class="bi bi-envelope"></i> Email:</strong>
+                                <span>fernandesfernandesjonas21@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <strong><i class="bi bi-geo-alt"></i> Localização:</strong>
+                                <span>Tocantins, Brasil</span>
+                            </div>
+                            <div class="info-item">
+                                <strong><i class="bi bi-translate"></i> Idiomas:</strong>
+                                <span>Português (Nativo), Inglês (Básico)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Habilidades -->
+        <section class="habilidades" id="habilidades" role="region" aria-label="Habilidades de Jonas Fernandes">
+            <div class="interface">
+                <div class="titulo-secao" data-aos="fade-up">
+                    <h2>
+                        Minhas <span>Habilidades</span>
+                    </h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="skills-container">
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                        <h3><i class="bi bi-code-slash"></i> Front-end</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon html" aria-hidden="true"><i class="bi bi-filetype-html"></i>
+                                </div>
+                                <h4>HTML5</h4>
+                                <div class="progress-bar" aria-label="nível de habilidade 95 por cento em HTML5">
+                                    <div class="progress" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon css" aria-hidden="true"><i class="bi bi-filetype-css"></i></div>
+                                <h4>CSS3</h4>
+                                <div class="progress-bar" aria-label="nível de habilidade 90 por cento em CSS3">
+                                    <div class="progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon js" aria-hidden="true"><i class="bi bi-filetype-js"></i></div>
+                                <h4>JavaScript</h4>
+                                <div class="progress-bar" aria-label="nível de habilidade 85 por cento em JavaScript">
+                                    <div class="progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon bootstrap" aria-hidden="true"><i class="bi bi-bootstrap"></i>
+                                </div>
+                                <h4>Bootstrap</h4>
+                                <div class="progress-bar" aria-label="nível de habilidade 80 por cento em Bootstrap">
+                                    <div class="progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                        <h3><i class="bi bi-tools"></i> Ferramentas & Outros</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon git" aria-hidden="true"><i class="bi bi-git"></i></div>
+                                <h4>Git</h4>
+                                <div class="progress-bar" aria-label="nível de habilidade 80 por cento em Git">
+                                    <div class="progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon responsive" aria-hidden="true"><i class="bi bi-phone"></i></div>
+                                <h4>Design Responsivo</h4>
+                                <div class="progress-bar"
+                                    aria-label="nível de habilidade 90 por cento em Design Responsivo">
+                                    <div class="progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon figma" aria-hidden="true"><i class="bi bi-vector-pen"></i></div>
+                                <h4>Figma</h4>
+                                <div class="progress-bar" aria-label="nível de habilidade 65 por cento em Figma">
+                                    <div class="progress" style="width: 65%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon seo" aria-hidden="true"><i class="bi bi-search"></i></div>
+                                <h4>SEO</h4>
+                                <div class="progress-bar" aria-label="nível de habilidade 70 por cento em SEO">
+                                    <div class="progress" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato Rápido -->
+        <section class="contato" role="region" aria-label="Contato rápido">
+            <div class="interface">
+                <article class="txt-contato" data-aos="fade-up">
+                    <h3><span>Entre em contato</span> agora mesmo.</h3>
+                    <p>Tire suas dúvidas e solicite um orçamento sem compromisso</p>
+                </article>
+
+                <article class="icons-contato" data-aos="fade-up" data-aos-delay="200">
                     <a href="https://wa.me/5563992354732?text=Olá! Vi seu portfólio e gostaria de conversar sobre um projeto."
-                        target="_blank">
-                        <button class="button-btn" type="button"><i class="bi bi-whatsapp"></i> WhatsApp</button>
+                        target="_blank" rel="noopener noreferrer">
+                        <button type="button" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i>
+                            <p>WhatsApp</p>
+                        </button>
                     </a>
-                    <a href="#" class="download-cv">
-                        <button class="button-btn secondary" type="button"><i class="bi bi-file-earmark-arrow-down"></i> Download CV</button>
+                    <a href="mailto:fernandesfernandesjonas21@gmail.com">
+                        <button type="button" aria-label="Enviar Email"><i class="bi bi-envelope-at-fill"></i>
+                            <p>Enviar e-mail</p>
+                        </button>
                     </a>
+                    <a href="tel:+5563992354732">
+                        <button type="button" aria-label="Ligar"><i class="bi bi-telephone-fill"></i>
+                            <p>Ligar agora</p>
+                        </button>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section class="projetos" id="projetos" role="region" aria-label="Projetos">
+            <div class="interface">
+                <div class="titulo-secao" data-aos="fade-up">
+                    <h2>Meus <span>Projetos</span></h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="filtro-projetos" data-aos="fade-up" role="list" aria-label="Filtro de projetos">
+                    <button class="filtro-btn ativo" data-filter="todos" type="button" role="listitem"
+                        aria-pressed="true">Todos</button>
+                    <button class="filtro-btn" data-filter="web" type="button" role="listitem"
+                        aria-pressed="false">Web</button>
+                    <button class="filtro-btn" data-filter="app" type="button" role="listitem"
+                        aria-pressed="false">Aplicativos</button>
+                    <button class="filtro-btn" data-filter="design" type="button" role="listitem"
+                        aria-pressed="false">Design</button>
+                </div>
+
+                <div class="instrucoes" data-aos="fade-up">
+                    <!-- Projeto Academia -->
+                    <article class="instru-box" data-category="web" role="article" aria-label="Projeto Academia">
+                        <div class="img-instru-box">
+                            <img src="./img/academia.png"
+                                alt="Tela do Projeto Academia - site completo para academia com área de membros"
+                                width="400" height="200" />
+                            <div class="overlay-projeto" aria-hidden="true">
+                                <div class="projeto-links">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="btn-ver-projeto"
+                                        tabindex="-1"><i class="bi bi-eye"></i> Ver Projeto</a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="btn-ver-codigo"
+                                        tabindex="-1"><i class="bi bi-code-slash"></i> Ver Código</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="txt-instru-box">
+                            <h4>Projeto <span>Academia</span></h4>
+                            <p class="descricao-projeto">
+                                Site completo para academia com área de membros, agendamento de aulas e planos de
+                                treinamento personalizados.
+                            </p>
+                            <div class="tecnologias-usadas" aria-label="Tecnologias usadas">
+                                <i class="bi bi-filetype-html" aria-hidden="true" title="HTML5"></i>
+                                <i class="bi bi-filetype-css" aria-hidden="true" title="CSS3"></i>
+                                <i class="bi bi-filetype-js" aria-hidden="true" title="JavaScript"></i>
+                                <i class="bi bi-bootstrap" aria-hidden="true" title="Bootstrap 5"></i>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projeto Mario Bros -->
+                    <article class="instru-box" data-category="web" role="article" aria-label="Projeto Mario Bros">
+                        <div class="img-instru-box">
+                            <img src="./img/mario.png"
+                                alt="Landing page inspirada no universo do Mario Bros, com animações interativas"
+                                width="400" height="200" />
+                            <div class="overlay-projeto" aria-hidden="true">
+                                <div class="projeto-links">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="btn-ver-projeto"
+                                        tabindex="-1"><i class="bi bi-eye"></i> Ver Projeto</a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="btn-ver-codigo"
+                                        tabindex="-1"><i class="bi bi-code-slash"></i> Ver Código</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="txt-instru-box">
+                            <h4>Projeto <span>Mario Bros</span></h4>
+                            <p class="descricao-projeto">
+                                Landing page inspirada no universo do Mario Bros, com animações interativas e design
+                                responsivo.
+                            </p>
+                            <div class="tecnologias-usadas" aria-label="Tecnologias usadas">
+                                <i class="bi bi-filetype-html" aria-hidden="true" title="HTML5"></i>
+                                <i class="bi bi-filetype-css" aria-hidden="true" title="CSS3"></i>
+                                <i class="bi bi-filetype-js" aria-hidden="true" title="JavaScript"></i>
+                                <i class="bi bi-bootstrap" aria-hidden="true" title="Bootstrap 5"></i>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Hamburg -->
+                    <article class="instru-box" data-category="web" role="article" aria-label="Hamburgueria">
+                        <div class="img-instru-box">
+                            <img src="./img/hamburg.png"
+                                alt="Landing page inspirada no universo de lachonetes, com animações interativas"
+                                width="400" height="200" />
+                            <div class="overlay-projeto" aria-hidden="true">
+                                <div class="projeto-links">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="btn-ver-projeto"
+                                        tabindex="-1"><i class="bi bi-eye"></i> Ver Projeto</a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="btn-ver-codigo"
+                                        tabindex="-1"><i class="bi bi-code-slash"></i> Ver Código</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="txt-instru-box">
+                            <h4>Projeto <span>Hamburgueria</span></h4>
+                            <p class="descricao-projeto">
+                                Landing page inspirada no universo de lachonetes, com animações interativas e design
+                                responsivo.
+                            </p>
+                            <div class="tecnologias-usadas" aria-label="Tecnologias usadas">
+                                <i class="bi bi-filetype-html" aria-hidden="true" title="HTML5"></i>
+                                <i class="bi bi-filetype-css" aria-hidden="true" title="CSS3"></i>
+                                <i class="bi bi-filetype-js" aria-hidden="true" title="JavaScript"></i>
+                                <i class="bi bi-bootstrap" aria-hidden="true" title="Bootstrap 5"></i>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Site G&J -->
+                    <article class="instru-box" data-category="web" role="article" aria-label="Projeto G&J">
+                        <div class="img-instru-box">
+                            <img src="./img/site Gej.png"
+                                alt="Landing page inspirada no universo web, com animações interativas"
+                                width="400" height="200" />
+                            <div class="overlay-projeto" aria-hidden="true">
+                                <div class="projeto-links">
+                                    <a href="https://gjrefrigeracao.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-ver-projeto"
+                                        tabindex="-1"><i class="bi bi-eye"></i> Ver Projeto</a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="btn-ver-codigo"
+                                        tabindex="-1"><i class="bi bi-code-slash"></i> Ver Código</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="txt-instru-box">
+                            <h4>Projeto <span>Site G&J</span></h4>
+                            <p class="descricao-projeto">
+                                Landing page inspirada no universo de empresas prestadora de serviços, com animações interativas e design
+                                responsivo.
+                            </p>
+                            <div class="tecnologias-usadas" aria-label="Tecnologias usadas">
+                                <i class="bi bi-filetype-html" aria-hidden="true" title="HTML5"></i>
+                                <i class="bi bi-filetype-css" aria-hidden="true" title="CSS3"></i>
+                                <i class="bi bi-filetype-js" aria-hidden="true" title="JavaScript"></i>
+                                <i class="bi bi-bootstrap" aria-hidden="true" title="Bootstrap 5"></i>
+                            </div>
+                        </div>
+                    </article>
+
+                     <!-- Coversor de moedas -->
+                    <article class="instru-box" data-category="web" role="article" aria-label="Coversor de moedas">
+                        <div class="img-instru-box">
+                            <img src="./img/conversor de moedas.png"
+                                alt="Landing page inspirada no universo web, com animações interativas"
+                                width="400" height="200" />
+                            <div class="overlay-projeto" aria-hidden="true">
+                                <div class="projeto-links">
+                                    <a href="https://moedas-converter.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-ver-projeto"
+                                        tabindex="-1"><i class="bi bi-eye"></i> Ver Projeto</a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="btn-ver-codigo"
+                                        tabindex="-1"><i class="bi bi-code-slash"></i> Ver Código</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="txt-instru-box">
+                            <h4>Projeto <span>Conversor de Moedas</span></h4>
+                            <p class="descricao-projeto">
+                                Landing page inspirada no universo de pesquisas web, com animações interativas e design
+                                responsivo.
+                            </p>
+                            <div class="tecnologias-usadas" aria-label="Tecnologias usadas">
+                                <i class="bi bi-filetype-html" aria-hidden="true" title="HTML5"></i>
+                                <i class="bi bi-filetype-css" aria-hidden="true" title="CSS3"></i>
+                                <i class="bi bi-filetype-js" aria-hidden="true" title="JavaScript"></i>
+                                <i class="bi bi-bootstrap" aria-hidden="true" title="Bootstrap 5"></i>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Demais projetos adicionados aqui seguindo o mesmo padrão -->
+
                 </div>
             </div>
+        </section>
 
-            <div class="txt-hero-1" data-aos="fade-left" data-aos-duration="1000">
-                <img src="./img/img-3.png" alt="Imagem representando códigos de programação">
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção Sobre -->
-    <section class="sobre" id="sobre">
-        <div class="interface">
-            <div class="titulo-secao" data-aos="fade-up">
-                <h2>Sobre <span>Mim</span></h2>
-                <div class="line"></div>
-            </div>
-            
-            <div class="conteudo-sobre">
-                <div class="foto-sobre" data-aos="fade-right">
-                    <img src="./img/Jonas.png" alt="Foto de Jonas Fernandes">
+        <!-- Seção Formulário -->
+        <section class="formulario-contato" id="formulario" role="region" aria-label="Formulário de contato">
+            <div class="interface">
+                <div class="titulo-secao" data-aos="fade-up">
+                    <h2>Fale <span>Comigo</span></h2>
+                    <div class="line"></div>
                 </div>
-                
-                <div class="texto-sobre" data-aos="fade-left">
-                    <h3>Quem sou <span>eu?</span></h3>
-                    <p>
-                        Sou um desenvolvedor Web dedicado a criar soluções web eficientes e inovadoras. Com experiência em diversas tecnologias
-                        front-end e back-end, estou sempre em busca de novos desafios e aprendizados.
-                    </p>
-                    <p>
-                        Minha jornada na programação começou com HTML, CSS e JavaScript, e desde então tenho expandido constantemente meus conhecimentos
-                        para incluir frameworks modernos e metodologias ágeis de desenvolvimento.
-                    </p>
-                    <p>
-                        Acredito que a tecnologia tem o poder de transformar realidades, e meu objetivo é criar aplicações
-                        que proporcionem experiências significativas para os usuários.
-                    </p>
-                    
-                    <div class="info-pessoal">
+
+                <div class="contato-container">
+                    <div class="contato-info" data-aos="fade-right">
+                        <h3>Informações de Contato</h3>
+                        <p>Preencha o formulário ao lado e entrarei em contato o mais breve possível.</p>
+
                         <div class="info-item">
-                            <strong><i class="bi bi-envelope"></i> Email:</strong>
-                            <span>fernandesfernandesjonas21@gmail.com</span>
+                            <i class="bi bi-telephone"></i>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>(63) 99235-4732</p>
+                            </div>
                         </div>
+
                         <div class="info-item">
-                            <strong><i class="bi bi-geo-alt"></i> Localização:</strong>
-                            <span>Tocantins, Brasil</span>
+                            <i class="bi bi-envelope"></i>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p>fernandesfernandesjonas21@gmail.com</p>
+                            </div>
                         </div>
+
                         <div class="info-item">
-                            <strong><i class="bi bi-translate"></i> Idiomas:</strong>
-                            <span>Português (Nativo), Inglês (Básico)</span>
+                            <i class="bi bi-geo-alt"></i>
+                            <div>
+                                <h4>Localização</h4>
+                                <p>Tocantins, Brasil</p>
+                            </div>
                         </div>
+
+                        <div class="social-media">
+                            <a href="https://www.instagram.com/cjonasfernandes/" target="_blank"
+                                rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/jonas-fernandes-costa-7b7971279/" target="_blank"
+                                rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/mastersatjonas" target="_blank" rel="noopener noreferrer"><i
+                                    class="bi bi-github"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61562694578143" target="_blank"
+                                rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contato-form" data-aos="fade-left">
+                        <form id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required
+                                    aria-required="true" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required
+                                    aria-required="true" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="assunto">Assunto</label>
+                                <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem"
+                                    required aria-required="true" />
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..." required
+                                    aria-required="true"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-enviar" aria-label="Enviar mensagem">
+                                Enviar Mensagem <i class="bi bi-send"></i>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Seção Habilidades -->
-    <section class="habilidades" id="habilidades">
-        <div class="interface">
-            <div class="titulo-secao" data-aos="fade-up">
-                <h2>Minhas <span>Habilidades</span></h2>
-                <div class="line"></div>
-            </div>
-            
-            <div class="skills-container">
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                    <h3><i class="bi bi-code-slash"></i> Front-end</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon html">
-                                <i class="bi bi-filetype-html"></i>
-                            </div>
-                            <h4>HTML5</h4>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 95%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon css">
-                                <i class="bi bi-filetype-css"></i>
-                            </div>
-                            <h4>CSS3</h4>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 90%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon js">
-                                <i class="bi bi-filetype-js"></i>
-                            </div>
-                            <h4>JavaScript</h4>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 85%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon bootstrap">
-                                <i class="bi bi-bootstrap"></i>
-                            </div>
-                            <h4>Bootstrap</h4>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 80%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-               <!-- <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                    <h3><i class="bi bi-server"></i> Back-end</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon node">
-                                <i class="bi bi-filetype-jsx"></i>
-                            </div>
-                            <h4>Node.js</h4>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 75%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon php">
-                                <i class="bi bi-filetype-php"></i>
-                            </div>
-                            <h4>PHP</h4>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 70%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon sql">
-                                <i class="bi bi-database"></i>
-                            </div>
-                            <h4>MySQL</h4>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 75%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon api">
-                                <i class="bi bi-braces"></i>
-                            </div>
-                            <h4>API REST</h4>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 70%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-                    <h3><i class="bi bi-tools"></i> Ferramentas & Outros</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon git">
-                                <i class="bi bi-git"></i>
-                            </div>
-                            <h4>Git</h4>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 80%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon responsive">
-                                <i class="bi bi-phone"></i>
-                            </div>
-                            <h4>Design Responsivo</h4>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 90%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon figma">
-                                <i class="bi bi-vector-pen"></i>
-                            </div>
-                            <h4>Figma</h4>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 65%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon seo">
-                                <i class="bi bi-search"></i>
-                            </div>
-                            <h4>SEO</h4>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 70%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção Contato Rápido -->
-    <section class="contato">
-        <div class="interface">
-            <article class="txt-contato" data-aos="fade-up">
-                <h3>
-                    <span>Entre em contato</span> agora mesmo.
-                </h3>
-                <p>Tire suas dúvidas e solicite um orçamento sem compromisso</p>
-            </article>
-
-            <article class="icons-contato" data-aos="fade-up" data-aos-delay="200">
-                <a href="https://wa.me/5563992354732?text=Olá! Vi seu portfólio e gostaria de conversar sobre um projeto." target="_blank">
-                    <button type="button"><i class="bi bi-whatsapp"></i>
-                        <p>WhatsApp</p>
-                    </button>
-                </a>
-                <a href="mailto:fernandesfernandesjonas21@gmail.com">
-                    <button type="button"><i class="bi bi-envelope-at-fill"></i>
-                        <p>Enviar e-mail</p>
-                    </button>
-                </a>
-                <a href="tel:+5563992354732">
-                    <button type="button"><i class="bi bi-telephone-fill"></i>
-                        <p>Ligar agora</p>
-                    </button>
-                </a>
-            </article>
-        </div>
-    </section>
-
-    <!-- Seção Projetos -->
-     
-    <section class="projetos" id="projetos">
-        <div class="interface">
-            <div class="titulo-secao" data-aos="fade-up">
-                <h2>Meus <span>Projetos</span></h2>
-                <div class="line"></div>
-            </div>
-
-            <div class="filtro-projetos" data-aos="fade-up">
-                <button class="filtro-btn ativo" data-filter="todos">Todos</button>
-                <button class="filtro-btn" data-filter="web">Web</button>
-                <button class="filtro-btn" data-filter="app">Aplicativos</button>
-                <button class="filtro-btn" data-filter="design">Design</button>
-            </div>
-
-            <div class="instrucoes">
-                <article class="instru-box" data-aos="fade-up" data-aos-delay="100" data-category="web">
-                    <div class="img-instru-box">
-                        <img src="./img/academia.png" alt="Projeto Academia">
-                        <div class="overlay-projeto">
-                            <div class="projeto-links">
-                                <a href="#" target="_blank" class="btn-ver-projeto"><i class="bi bi-eye"></i> Ver Projeto</a>
-                                <a href="#" target="_blank" class="btn-ver-codigo"><i class="bi bi-code-slash"></i> Ver Código</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="txt-instru-box">
-                        <h4>Projeto <span>Academia</span></h4>
-                        <p class="descricao-projeto">
-                            Site completo para academia com área de membros, agendamento de aulas e planos de treinamento personalizados.
-                        </p>
-                        <div class="tecnologias-usadas">
-                            <i class="bi bi-filetype-html"></i>
-                            <i class="bi bi-filetype-css"></i>
-                            <i class="bi bi-filetype-js"></i>
-                            <i class="bi bi-bootstrap"></i>
-                        </div>
-                    </div>
-
+        <!-- Seção Contato adicional -->
+        <section class="contato" role="region" aria-label="Opções de contato adicionais">
+            <div class="interface">
+                <article class="txt-contato" data-aos="fade-up">
+                    <h3>
+                        Opções de contato <span>para falar comigo</span>
+                    </h3>
+                    <p>e obter informações agora mesmo.</p>
                 </article>
 
-                <article class="instru-box" data-aos="fade-up" data-aos-delay="200" data-category="web design">
-                    <div class="img-instru-box">
-                        <img src="./img/mario.png" alt="Projeto Mario Bros">
-                        <div class="overlay-projeto">
-                            <div class="projeto-links">
-                                <a href="#" target="_blank" class="btn-ver-projeto"><i class="bi bi-eye"></i> Ver Projeto</a>
-                                <a href="#" target="_blank" class="btn-ver-codigo"><i class="bi bi-code-slash"></i> Ver Código</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="txt-instru-box">
-                        <h4>Projeto <span>Mario Bros</span></h4>
-                        <p class="descricao-projeto">
-                            Landing page inspirada no universo do Mario Bros, com animações interativas e design responsivo.
-                        </p>
-                        <div class="tecnologias-usadas">
-                            <i class="bi bi-filetype-html"></i>
-                            <i class="bi bi-filetype-css"></i>
-                            <i class="bi bi-filetype-js"></i>
-                            <i class="bi bi-bootstrap"></i>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="instru-box" data-aos="fade-up" data-aos-delay="200" data-category="web design">
-                    <div class="img-instru-box">
-                        <img src="./img/site Gej.png" alt="Site da G&J refrigeração">
-                        <div class="overlay-projeto">
-                            <div class="projeto-links">
-                                <a href="#" target="_blank" class="btn-ver-projeto"><i class="bi bi-eye"></i> Ver Projeto</a>
-                                <a href="#" target="_blank" class="btn-ver-codigo"><i class="bi bi-code-slash"></i> Ver Código</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="txt-instru-box">
-                        <h4>Projeto <span>Pagina de Apresentação da empresa G&J Refrigeração</span></h4>
-                        <p class="descricao-projeto">
-                            Landing page inspirada no dia a dia de Trabalho e feedback dos clientes, com animações interativas e design responsivo.
-                        </p>
-                        <div class="tecnologias-usadas">
-                            <i class="bi bi-filetype-html"></i>
-                            <i class="bi bi-filetype-css"></i>
-                            <i class="bi bi-filetype-js"></i>
-                            <i class="bi bi-bootstrap"></i>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="instru-box" data-aos="fade-up" data-aos-delay="200" data-category="web design">
-                    <div class="img-instru-box">
-                        <img src="./img/portifolio.png" alt="Portfólio">
-                        <div class="overlay-projeto">
-                            <div class="projeto-links">
-                                <a href="#" target="_blank" class="btn-ver-projeto"><i class="bi bi-eye"></i> Ver Projeto</a>
-                                <a href="#" target="_blank" class="btn-ver-codigo"><i class="bi bi-code-slash"></i> Ver Código</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="txt-instru-box">
-                        <h4>Projeto <span>Pagina de Apresentação do Proficional</span></h4>
-                        <p class="descricao-projeto">
-                            Landing page do Proficional, com animações interativas e design responsivo.
-                        </p>
-                        <div class="tecnologias-usadas">
-                            <i class="bi bi-filetype-html"></i>
-                            <i class="bi bi-filetype-css"></i>
-                            <i class="bi bi-filetype-js"></i>
-                            <i class="bi bi-bootstrap"></i>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="instru-box" data-aos="fade-up" data-aos-delay="300" data-category="app">
-                    <div class="img-instru-box">
-                        <img src="./img/conversor de moedas.png" alt="Projeto Conversor de Moedas">
-                        <div class="overlay-projeto">
-                            <div class="projeto-links">
-                                <a href="#" target="_blank" class="btn-ver-projeto"><i class="bi bi-eye"></i> Ver Projeto</a>
-                                <a href="#" target="_blank" class="btn-ver-codigo"><i class="bi bi-code-slash"></i> Ver Código</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="txt-instru-box">
-                        <h4>Projeto <span>Conversor de Moedas</span></h4>
-                        <p class="descricao-projeto">
-                            Aplicativo web que permite converter valores entre diferentes moedas internacionais utilizando API de taxas de câmbio em tempo real.
-                        </p>
-                        <div class="tecnologias-usadas">
-                            <i class="bi bi-filetype-html"></i>
-                            <i class="bi bi-filetype-css"></i>
-                            <i class="bi bi-filetype-js"></i>
-                            <i class="bi bi-bootstrap"></i>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="instru-box" data-aos="fade-up" data-aos-delay="400" data-category="web design">
-                    <div class="img-instru-box">
-                        <img src="./img/pizzaria.png" alt="Projeto Pizzaria">
-                        <div class="overlay-projeto">
-                            <div class="projeto-links">
-                                <a href="#" target="_blank" class="btn-ver-projeto"><i class="bi bi-eye"></i> Ver Projeto</a>
-                                <a href="#" target="_blank" class="btn-ver-codigo"><i class="bi bi-code-slash"></i> Ver Código</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="txt-instru-box">
-                        <h4>Projeto <span>Pizzaria</span></h4>
-                        <p class="descricao-projeto">
-                            Site para pizzaria com sistema de pedidos online, cardápio interativo e integração para entrega.
-                        </p>
-                        <div class="tecnologias-usadas">
-                            <i class="bi bi-filetype-html"></i>
-                            <i class="bi bi-filetype-css"></i>
-                            <i class="bi bi-filetype-js"></i>
-                        </div>
-                    </div>
+                <article class="icons-contato" data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://wa.me/5563992354732?text=Olá! Vi seu portfólio e gostaria de conversar sobre um projeto."
+                        target="_blank" rel="noopener noreferrer">
+                        <button type="button" aria-label="WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                            <p>WhatsApp</p>
+                        </button>
+                    </a>
+                    <a href="mailto:fernandesfernandesjonas21@gmail.com">
+                        <button type="button" aria-label="Enviar Email">
+                            <i class="bi bi-envelope-at-fill"></i>
+                            <p>Enviar e-mail</p>
+                        </button>
+                    </a>
+                    <a href="tel:+5563992354732">
+                        <button type="button" aria-label="Ligar">
+                            <i class="bi bi-telephone-fill"></i>
+                            <p>Ligar agora</p>
+                        </button>
+                    </a>
+                    <a href="https://www.instagram.com/cjonasfernandes/" target="_blank" rel="noopener noreferrer">
+                        <button type="button" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                            <p>Instagram</p>
+                        </button>
+                    </a>
+                    <a href="#formulario">
+                        <button type="button" aria-label="Formulário">
+                            <i class="bi bi-ui-checks"></i>
+                            <p>Formulário</p>
+                        </button>
+                    </a>
                 </article>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Formulário de Contato -->
-    <section class="formulario-contato" id="formulario">
-        <div class="interface">
-            <div class="titulo-secao" data-aos="fade-up">
-                <h2>Fale <span>Comigo</span></h2>
-                <div class="line"></div>
-            </div>
-            
-            <div class="contato-container">
-                <div class="contato-info" data-aos="fade-right">
-                    <h3>Informações de Contato</h3>
-                    <p>Preencha o formulário ao lado e entrarei em contato o mais breve possível.</p>
-                    
-                    <div class="info-item">
-                        <i class="bi bi-telephone"></i>
-                        <div>
-                            <h4>Telefone</h4>
-                            <p>(63) 99235-4732</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <i class="bi bi-envelope"></i>
-                        <div>
-                            <h4>E-mail</h4>
-                            <p>fernandesfernandesjonas21@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <i class="bi bi-geo-alt"></i>
-                        <div>
-                            <h4>Localização</h4>
-                            <p>Tocantins, Brasil</p>
-                        </div>
-                    </div>
-                    
-                    <div class="social-media">
-                        <a href="https://www.instagram.com/cjonasfernandes/" target="_blank"><i class="bi bi-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/jonas-fernandes-costa-7b7971279/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://github.com/mastersatjonas" target="_blank"><i class="bi bi-github"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=61562694578143" target="_blank"><i class="bi bi-facebook"></i></a>
-                    </div>
-                </div>
-                
-                <div class="contato-form" data-aos="fade-left">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="nome">Nome Completo</label>
-                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="telefone">Telefone</label>
-                            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="assunto">Assunto</label>
-                            <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem" required>
-                        </div>
-                        
-                        <div class="form-group full-width">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..." required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn-enviar">Enviar Mensagem <i class="bi bi-send"></i></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contato">
-        <div class="interface">
-            <article class="txt-contato" data-aos="fade-up">
-                <h3>
-                    Opções de contato <span>para falar comigo</span>
-                </h3>
-                <p>e obter informações agora mesmo.</p>
-            </article>
-
-            <article class="icons-contato" data-aos="fade-up" data-aos-delay="200">
-                <a href="https://wa.me/5563992354732?text=Olá! Vi seu portfólio e gostaria de conversar sobre um projeto." target="_blank">
-                    <button type="button"><i class="bi bi-whatsapp"></i>
-                        <p>WhatsApp</p>
-                    </button>
-                </a>
-                <a href="mailto:fernandesfernandesjonas21@gmail.com">
-                    <button type="button"><i class="bi bi-envelope-at-fill"></i>
-                        <p>Enviar e-mail</p>
-                    </button>
-                </a>
-                <a href="tel:+5563992354732">
-                    <button type="button"><i class="bi bi-telephone-fill"></i>
-                        <p>Ligar agora</p>
-                    </button>
-                </a>
-                <a href="https://www.instagram.com/cjonasfernandes/" target="_blank">
-                    <button type="button"><i class="bi bi-instagram"></i>
-                        <p>Instagram</p>
-                    </button>
-                </a>
-                <a href="#formulario">
-                    <button type="button"><i class="bi bi-ui-checks"></i>
-                        <p>Formulário</p>
-                    </button>
-                </a>
-            </article>
-        </div>
-    </section>
-
-    <footer id="footer">
+    <footer id="footer" role="contentinfo">
         <div class="interface">
             <section class="top-footer">
-                <a href="https://www.instagram.com/cjonasfernandes/" target="_blank">
-                    <button><i class="bi bi-instagram"></i></button>
+                <a href="https://www.instagram.com/cjonasfernandes/" target="_blank" rel="noopener noreferrer">
+                    <button aria-label="Instagram"><i class="bi bi-instagram"></i></button>
                 </a>
-                <a href="https://www.linkedin.com/in/jonas-fernandes-costa-7b7971279/" target="_blank">
-                    <button><i class="bi bi-linkedin"></i></button>
+                <a href="https://www.linkedin.com/in/jonas-fernandes-costa-7b7971279/" target="_blank"
+                    rel="noopener noreferrer">
+                    <button aria-label="LinkedIn"><i class="bi bi-linkedin"></i></button>
                 </a>
-                <a href="https://github.com/mastersatjonas" target="_blank">
-                    <button><i class="bi bi-github"></i></button>
+                <a href="https://github.com/mastersatjonas" target="_blank" rel="noopener noreferrer">
+                    <button aria-label="GitHub"><i class="bi bi-github"></i></button>
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=61562694578143" target="_blank">
-                    <button><i class="bi bi-facebook"></i></button>
+                <a href="https://www.facebook.com/profile.php?id=61562694578143" target="_blank"
+                    rel="noopener noreferrer">
+                    <button aria-label="Facebook"><i class="bi bi-facebook"></i></button>
                 </a>
-                <a href="https://wa.me/5563992354732?text=Olá! Vi seu portfólio e gostaria de conversar sobre um projeto." target="_blank">
-                    <button><i class="bi bi-whatsapp"></i></button>
+                <a href="https://wa.me/5563992354732?text=Olá! Vi seu portfólio e gostaria de conversar sobre um projeto."
+                    target="_blank" rel="noopener noreferrer">
+                    <button aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></button>
                 </a>
             </section>
 
@@ -670,82 +673,37 @@
         </div>
     </footer>
 
-    <!-- Inclusão de bibliotecas e scripts externos -->
+    <!-- Scripts Externos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="scriptmenu.js" defer></script>
-    <script src="scriptbutton.js" defer></script>
-    
-    <!-- Script para inicializar AOS e demais funcionalidades -->
-    <script>
-        // Inicializa AOS
-        AOS.init();
 
-        // Botão Voltar ao Topo
-        window.onscroll = function() {
-            const btnTopo = document.getElementById("btnTopo");
+    <script>
+        // Inicializa AOS - animações na rolagem
+        AOS.init({ once: true, duration: 1000 });
+
+        // Botão voltar ao topo
+        const btnTopo = document.getElementById("btnTopo");
+        window.addEventListener('scroll', () => {
             if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
                 btnTopo.style.display = "flex";
             } else {
                 btnTopo.style.display = "none";
             }
-        };
-
-        // Exemplo de Filtro de Projetos
-        document.addEventListener('DOMContentLoaded', function() {
-            const filterBtns = document.querySelectorAll('.filtro-btn');
-            const projetos = document.querySelectorAll('.instru-box');
-
-            filterBtns.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    // Remove a classe "ativo" de todos os botões
-                    filterBtns.forEach(b => b.classList.remove('ativo'));
-                    // Adiciona a classe "ativo" no botão clicado
-                    btn.classList.add('ativo');
-
-                    const filterValue = btn.getAttribute('data-filter');
-                    projetos.forEach(projeto => {
-                        if (filterValue === 'todos') {
-                            projeto.style.display = 'block';
-                        } else {
-                            if (projeto.getAttribute('data-category').includes(filterValue)) {
-                                projeto.style.display = 'block';
-                            } else {
-                                projeto.style.display = 'none';
-                            }
-                        }
-                    });
-                });
-            });
         });
 
-        // Modo Escuro (Dark Mode) - Cria e adiciona o botão ao carregar o DOM
+        // Dark Mode Toggle com persistência via localStorage
         document.addEventListener('DOMContentLoaded', () => {
             const darkModeToggle = document.createElement('button');
             darkModeToggle.classList.add('dark-mode-toggle');
-            
-            // Verifica se o modo escuro está habilitado no localStorage
-            const darkModeEnabled = localStorage.getItem('darkMode') === 'enabled';
-            if (darkModeEnabled) {
+            darkModeToggle.setAttribute('aria-label', 'Alternar modo escuro');
+            darkModeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
+
+            if (localStorage.getItem('darkMode') === 'enabled') {
                 document.body.classList.add('dark-mode');
                 darkModeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
-            } else {
-                darkModeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
             }
-            
-            // Estilização do botão (ajuste conforme sua preferência ou mova para o CSS)
-            darkModeToggle.style.position = 'fixed';
-            darkModeToggle.style.top = '20px';
-            darkModeToggle.style.right = '20px';
-            darkModeToggle.style.background = 'none';
-            darkModeToggle.style.border = 'none';
-            darkModeToggle.style.fontSize = '1.5rem';
-            darkModeToggle.style.cursor = 'pointer';
-            darkModeToggle.style.zIndex = '1000';
 
-            // Adiciona o botão ao body
             document.body.appendChild(darkModeToggle);
 
-            // Alterna o modo escuro ao clicar
             darkModeToggle.addEventListener('click', () => {
                 document.body.classList.toggle('dark-mode');
                 if (document.body.classList.contains('dark-mode')) {
@@ -757,6 +715,47 @@
                 }
             });
         });
+
+        // Controle menu mobile
+        document.getElementById('btn-menu').addEventListener('click', () => {
+            document.getElementById('menu-mobile').classList.add('active');
+            document.getElementById('overlay-menu').classList.add('active');
+        });
+        document.querySelector('.btn-fechar').addEventListener('click', () => {
+            document.getElementById('menu-mobile').classList.remove('active');
+            document.getElementById('overlay-menu').classList.remove('active');
+        });
+        document.getElementById('overlay-menu').addEventListener('click', () => {
+            document.getElementById('menu-mobile').classList.remove('active');
+            document.getElementById('overlay-menu').classList.remove('active');
+        });
+
+        // Filtro projetos
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filtro-btn');
+            const projetos = document.querySelectorAll('.instru-box');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('ativo'));
+                    btn.classList.add('ativo');
+
+                    const filterValue = btn.getAttribute('data-filter').toLowerCase();
+                    projetos.forEach(projeto => {
+                        if (filterValue === 'todos') {
+                            projeto.style.display = 'flex';
+                        } else {
+                            if (projeto.getAttribute('data-category').toLowerCase().includes(filterValue)) {
+                                projeto.style.display = 'flex';
+                            } else {
+                                projeto.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+        });
     </script>
 </body>
+
 </html>
