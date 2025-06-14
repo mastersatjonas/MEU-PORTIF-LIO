@@ -1628,8 +1628,58 @@ section {
     margin: 0;
     font-weight: 300;
 }
+@media (max-width: 1024px) {
+    .menu-desktop nav ul {
+        gap: 25px;
+        padding: 10px 20px;
+    }
+}
 
-/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+    .menu-desktop,
+    .theme-toggle {
+        display: none;
+    }
+
+    .btn-abrir-menu {
+        display: flex;
+    }
+
+    .logo-text {
+        display: none;
+    }
+
+    .logo-branca {
+        width: 50px;
+        height: 50px;
+    }
+
+    #header {
+        padding: 12px 0;
+    }
+
+    .btn-contato button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-mobile {
+        width: 100vw;
+        right: -100vw;
+    }
+
+    .btn-contato button {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+
+    .btn-contato button span {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     .icons-contato {
         gap: 20px;
@@ -1714,8 +1764,3 @@ section {
         font-size: 1.6rem;
     }
 }
-
-
-/* Resto do CSS permanece igual */
-
-/* Responsividade e outros estilos obrigatórios aqui (omiti para brevidade) */
