@@ -22,7 +22,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-primary);
-    a{
+
+    a {
         text-decoration: none;
     }
 }
@@ -1628,6 +1629,7 @@ section {
     margin: 0;
     font-weight: 300;
 }
+
 /* Media Queries Atuais */
 
 /* Ajustes para tela até 1024px */
@@ -1639,137 +1641,33 @@ section {
 }
 
 /* Ajustes para telas até 768px */
+/* Media Queries para Responsividade em Telas de Smartphones */
+
 @media (max-width: 768px) {
-    .menu-desktop,
-    .theme-toggle {
-        display: none;
+    /* Ajustes gerais */
+    body {
+        font-size: 14px; /* Reduzir o tamanho da fonte */
     }
 
-    .btn-abrir-menu {
-        display: flex;
+    /* Seção Hero */
+    .hero-site {
+        padding: 50px 20px; /* Reduzir o padding */
     }
 
-    .logo-text {
-        display: none;
+    .txt-hero h1 {
+        font-size: 1.8rem; /* Ajustar o tamanho do título */
     }
 
-    .logo-branca {
-        width: 50px;
-        height: 50px;
+    .txt-hero p {
+        font-size: 0.9rem; /* Ajustar o tamanho do parágrafo */
     }
 
-    #header {
-        padding: 12px 0;
+    .txt-hero-1 img {
+        width: 100%; /* Tornar a imagem responsiva */
+        height: auto; /* Manter a proporção */
     }
 
-    .btn-contato button {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
-
-    .icons-contato {
-        gap: 20px;
-    }
-
-    .icons-contato button {
-        min-width: 120px;
-        padding: 15px 20px;
-    }
-
-    .icons-contato button i {
-        font-size: 2rem;
-    }
-
-    .contato-container {
-        gap: 40px;
-    }
-
-    .contato-info {
-        padding: 30px;
-    }
-
-    .contato-form {
-        padding: 30px;
-    }
-
-    .txt-contato h3 {
-        font-size: 2rem;
-    }
-
-    .middle-footer {
-        gap: 25px;
-    }
-
-    .footer-link {
-        font-size: 1rem;
-    }
-
-    .top-footer button {
-        width: 50px;
-        height: 50px;
-    }
-
-    .top-footer button i {
-        font-size: 1.5rem;
-    }
-}
-
-/* Ajustes para telas até 480px */
-@media (max-width: 480px) {
-    .menu-mobile {
-        width: 100vw;
-        right: -100vw;
-    }
-
-    .btn-contato button {
-        padding: 8px 15px;
-        font-size: 0.8rem;
-    }
-
-    .btn-contato button span {
-        display: none;
-    }
-
-    .icons-contato {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .icons-contato button {
-        width: 100%;
-        max-width: 200px;
-    }
-
-    .contato-info .info-item {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-
-    .social-media {
-        justify-content: center;
-    }
-
-    .middle-footer {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-
-    .txt-contato h3 {
-        font-size: 1.8rem;
-    }
-
-    .contato-info h3 {
-        font-size: 1.6rem;
-    }
-}
-
-/* Novas media queries para telas até 375px */
-
-@media (max-width: 375px) {
-    /* Seção Sobre Mim */
+    /* Seção Sobre */
     .sobre {
         padding: 20px; /* Reduzir o padding */
     }
@@ -1777,12 +1675,6 @@ section {
     .conteudo-sobre {
         flex-direction: column; /* Mudar para coluna */
         align-items: center; /* Centralizar o conteúdo */
-        gap: 20px; /* Reduzir o espaço entre os itens */
-    }
-
-    .foto-sobre {
-        flex: 1 1 100%; /* Fazer a foto ocupar toda a largura */
-        text-align: center; /* Centralizar a imagem */
     }
 
     .foto-sobre img {
@@ -1791,7 +1683,6 @@ section {
     }
 
     .texto-sobre {
-        flex: 1 1 100%; /* Fazer o texto ocupar toda a largura */
         text-align: center; /* Centralizar o texto */
     }
 
@@ -1814,6 +1705,66 @@ section {
         padding: 15px; /* Reduzir o padding */
         font-size: 0.9rem; /* Ajustar o tamanho da fonte */
     }
+
+    /* Seção Contato */
+    .contato-container {
+        flex-direction: column; /* Mudar para coluna */
+        gap: 20px; /* Reduzir o espaço entre os itens */
+    }
+
+    .contato-info {
+        padding: 20px; /* Reduzir o padding */
+    }
+
+    .contato-form {
+        padding: 20px; /* Reduzir o padding */
+    }
+
+    /* Seção Projetos */
+    .instrucoes {
+        grid-template-columns: repeat(1, 1fr); /* Mudar para uma coluna */
+    }
+
+    .instru-box {
+        margin-bottom: 20px; /* Adicionar espaço entre os projetos */
+    }
+
+    /* Footer */
+    .top-footer {
+        flex-direction: column; /* Mudar para coluna */
+        gap: 10px; /* Reduzir o espaço entre os itens */
+    }
+
+    .middle-footer {
+        flex-direction: column; /* Mudar para coluna */
+        gap: 10px; /* Reduzir o espaço entre os itens */
+    }
 }
 
+@media (max-width: 480px) {
+    /* Ajustes para telas menores */
+    body {
+        font-size: 12px; /* Reduzir ainda mais o tamanho da fonte */
+    }
 
+    .hero-site {
+        padding: 30px 10px; /* Reduzir o padding */
+    }
+
+    .txt-hero h1 {
+        font-size: 1.5rem; /* Ajustar o tamanho do título */
+    }
+
+    .txt-hero p {
+        font-size: 0.8rem; /* Ajustar o tamanho do parágrafo */
+    }
+
+    .btn-contato button {
+        padding: 8px 10px; /* Reduzir o padding dos botões */
+        font-size: 0.8rem; /* Ajustar o tamanho da fonte dos botões */
+    }
+
+    .footer-link {
+        font-size: 0.8rem; /* Ajustar o tamanho da fonte dos links do footer */
+    }
+}
