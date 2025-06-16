@@ -1644,127 +1644,179 @@ section {
 /* Media Queries para Responsividade em Telas de Smartphones */
 
 @media (max-width: 768px) {
+
     /* Ajustes gerais */
     body {
-        font-size: 14px; /* Reduzir o tamanho da fonte */
+        font-size: 14px;
+        /* Reduzir o tamanho da fonte */
     }
 
     /* Seção Hero */
     .hero-site {
-        padding: 50px 20px; /* Reduzir o padding */
+        padding: 50px 20px;
+        /* Reduzir o padding */
     }
 
     .txt-hero h1 {
-        font-size: 1.8rem; /* Ajustar o tamanho do título */
+        font-size: 1.8rem;
+        /* Ajustar o tamanho do título */
     }
 
     .txt-hero p {
-        font-size: 0.9rem; /* Ajustar o tamanho do parágrafo */
+        font-size: 0.9rem;
+        /* Ajustar o tamanho do parágrafo */
     }
 
     .txt-hero-1 img {
-        width: 100%; /* Tornar a imagem responsiva */
-        height: auto; /* Manter a proporção */
+        width: 100%;
+        /* Tornar a imagem responsiva */
+        height: auto;
+        /* Manter a proporção */
     }
 
     /* Seção Sobre */
     .sobre {
-        padding: 20px; /* Reduzir o padding */
+        padding: 20px;
+        /* Reduzir o padding */
     }
 
     .conteudo-sobre {
-        flex-direction: column; /* Mudar para coluna */
-        align-items: center; /* Centralizar o conteúdo */
+        flex-direction: column;
+        /* Mudar para coluna */
+        align-items: center;
+        /* Centralizar o conteúdo */
     }
 
     .foto-sobre img {
-        max-width: 100%; /* Garantir que a imagem não ultrapasse a largura */
-        height: auto; /* Manter a proporção da imagem */
+        max-width: 100%;
+        /* Garantir que a imagem não ultrapasse a largura */
+        height: auto;
+        /* Manter a proporção da imagem */
     }
 
     .texto-sobre {
-        text-align: center; /* Centralizar o texto */
+        text-align: center;
+        /* Centralizar o texto */
     }
 
     /* Seção Habilidades */
     .habilidades {
-        padding: 20px; /* Reduzir o padding */
+        padding: 20px;
+        /* Reduzir o padding */
     }
 
     .skills-container {
-        flex-direction: column; /* Mudar para coluna */
-        gap: 30px; /* Reduzir o espaço entre as categorias */
+        flex-direction: column;
+        /* Mudar para coluna */
+        gap: 30px;
+        /* Reduzir o espaço entre as categorias */
     }
 
     .skills-grid {
-        grid-template-columns: repeat(2, 1fr); /* Reduzir o número de colunas */
-        gap: 15px; /* Reduzir o espaço entre os itens */
+        grid-template-columns: repeat(2, 1fr);
+        /* Reduzir o número de colunas */
+        gap: 15px;
+        /* Reduzir o espaço entre os itens */
     }
 
     .skill-item {
-        padding: 15px; /* Reduzir o padding */
-        font-size: 0.9rem; /* Ajustar o tamanho da fonte */
+        padding: 15px;
+        /* Reduzir o padding */
+        font-size: 0.9rem;
+        /* Ajustar o tamanho da fonte */
     }
 
     /* Seção Contato */
     .contato-container {
-        flex-direction: column; /* Mudar para coluna */
-        gap: 20px; /* Reduzir o espaço entre os itens */
+        flex-direction: column;
+        /* Mudar para coluna */
+        gap: 20px;
+        /* Reduzir o espaço entre os itens */
     }
 
     .contato-info {
-        padding: 20px; /* Reduzir o padding */
+        padding: 20px;
+        /* Reduzir o padding */
     }
 
     .contato-form {
-        padding: 20px; /* Reduzir o padding */
+        padding: 20px;
+        /* Reduzir o padding */
     }
 
     /* Seção Projetos */
     .instrucoes {
-        grid-template-columns: repeat(1, 1fr); /* Mudar para uma coluna */
+        grid-template-columns: repeat(1, 1fr);
+        /* Mudar para uma coluna */
     }
 
     .instru-box {
-        margin-bottom: 20px; /* Adicionar espaço entre os projetos */
+        margin-bottom: 20px;
+        /* Adicionar espaço entre os projetos */
     }
 
     /* Footer */
     .top-footer {
-        flex-direction: column; /* Mudar para coluna */
-        gap: 10px; /* Reduzir o espaço entre os itens */
+        flex-direction: column;
+        /* Mudar para coluna */
+        gap: 10px;
+        /* Reduzir o espaço entre os itens */
     }
 
     .middle-footer {
-        flex-direction: column; /* Mudar para coluna */
-        gap: 10px; /* Reduzir o espaço entre os itens */
+        flex-direction: column;
+        /* Mudar para coluna */
+        gap: 10px;
+        /* Reduzir o espaço entre os itens */
+    }
+
+    .sobre {
+        margin: 0 0 0 12px;
+    }
+    .texto-sobre {
+        /* text-align: center; */
+        font-size: 10px;
+    }
+    section {
+    padding: 20px;
+    margin: 5px 10px 5px 60px;
     }
 }
 
+
+
 @media (max-width: 480px) {
+
     /* Ajustes para telas menores */
     body {
-        font-size: 12px; /* Reduzir ainda mais o tamanho da fonte */
+        font-size: 12px;
+        /* Reduzir ainda mais o tamanho da fonte */
     }
 
     .hero-site {
-        padding: 30px 10px; /* Reduzir o padding */
+        padding: 30px 10px;
+        /* Reduzir o padding */
     }
 
     .txt-hero h1 {
-        font-size: 1.5rem; /* Ajustar o tamanho do título */
+        font-size: 1.5rem;
+        /* Ajustar o tamanho do título */
     }
 
     .txt-hero p {
-        font-size: 0.8rem; /* Ajustar o tamanho do parágrafo */
+        font-size: 0.8rem;
+        /* Ajustar o tamanho do parágrafo */
     }
 
     .btn-contato button {
-        padding: 8px 10px; /* Reduzir o padding dos botões */
-        font-size: 0.8rem; /* Ajustar o tamanho da fonte dos botões */
+        padding: 8px 10px;
+        /* Reduzir o padding dos botões */
+        font-size: 0.8rem;
+        /* Ajustar o tamanho da fonte dos botões */
     }
 
     .footer-link {
-        font-size: 0.8rem; /* Ajustar o tamanho da fonte dos links do footer */
+        font-size: 0.8rem;
+        /* Ajustar o tamanho da fonte dos links do footer */
     }
 }
