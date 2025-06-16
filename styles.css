@@ -1769,80 +1769,51 @@ section {
 /* Novas media queries para telas até 375px */
 
 @media (max-width: 375px) {
-    body {
-        font-size: 14px;
+    /* Seção Sobre Mim */
+    .sobre {
+        padding: 20px; /* Reduzir o padding */
     }
 
-    #header .interface {
-        padding: 0 10px;
+    .conteudo-sobre {
+        flex-direction: column; /* Mudar para coluna */
+        align-items: center; /* Centralizar o conteúdo */
+        gap: 20px; /* Reduzir o espaço entre os itens */
     }
 
-    .logo-branca {
-        width: 45px;
-        height: 45px;
+    .foto-sobre {
+        flex: 1 1 100%; /* Fazer a foto ocupar toda a largura */
+        text-align: center; /* Centralizar a imagem */
     }
 
-    .btn-abrir-menu {
-        width: 45px;
-        height: 45px;
+    .foto-sobre img {
+        max-width: 100%; /* Garantir que a imagem não ultrapasse a largura */
+        height: auto; /* Manter a proporção da imagem */
     }
 
-    .btn-contato button {
-        padding: 8px 12px;
-        font-size: 0.75rem;
+    .texto-sobre {
+        flex: 1 1 100%; /* Fazer o texto ocupar toda a largura */
+        text-align: center; /* Centralizar o texto */
     }
 
-    .menu-desktop nav ul {
-        gap: 15px;
-        padding: 8px 10px;
+    /* Seção Habilidades */
+    .habilidades {
+        padding: 20px; /* Reduzir o padding */
     }
 
-    .menu-desktop a {
-        font-size: 0.85rem;
-        padding: 6px 10px;
+    .skills-container {
+        flex-direction: column; /* Mudar para coluna */
+        gap: 30px; /* Reduzir o espaço entre as categorias */
     }
 
-    .icons-contato button {
-        min-width: 100px;
-        padding: 12px 16px;
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* Reduzir o número de colunas */
+        gap: 15px; /* Reduzir o espaço entre os itens */
     }
 
-    .icons-contato button i {
-        font-size: 1.7rem;
-    }
-
-    .contato-info {
-        padding: 20px;
-    }
-
-    .contato-form {
-        padding: 20px;
-    }
-
-    .txt-contato h3 {
-        font-size: 1.5rem;
-    }
-
-    .middle-footer {
-        gap: 15px;
-    }
-
-    .footer-link {
-        font-size: 0.9rem;
-        padding: 6px 12px;
-    }
-
-    .top-footer button {
-        width: 40px;
-        height: 40px;
-    }
-
-    .top-footer button i {
-        font-size: 1.2rem;
-    }
-
-    .menu-mobile {
-        width: 100vw;
+    .skill-item {
+        padding: 15px; /* Reduzir o padding */
+        font-size: 0.9rem; /* Ajustar o tamanho da fonte */
     }
 }
+
 
