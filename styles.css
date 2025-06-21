@@ -1654,6 +1654,8 @@ section {
     /* Seção Hero */
     .hero-site {
         padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
         /* Reduzir o padding */
     }
 
@@ -1773,13 +1775,17 @@ section {
     .sobre {
         margin: 0 0 0 12px;
     }
+
     .texto-sobre {
         /* text-align: center; */
         font-size: 10px;
     }
+
     section {
-    padding: 20px;
-    margin: 5px 10px 5px 60px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        
     }
 }
 
