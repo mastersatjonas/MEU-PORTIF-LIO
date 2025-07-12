@@ -23,7 +23,7 @@ Este é o meu site portfólio pessoal, desenvolvido para apresentar meus projeto
 ![print minhas habilidades](img/habilidades.png)
 ![print projetos](img/projetos.png)
 ![print contatos](img/contatos.png)
-![print opção de contatos](img/opçãodecontatos.png)
+![print opção de contatos](img/opção-de-contatos.png)
 
 
 ## Autor
