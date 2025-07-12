@@ -18,12 +18,12 @@ Este é o meu site portfólio pessoal, desenvolvido para apresentar meus projeto
 
 ## Imagens do projeto
 
-![print inicio](imagem/inicio.png)
-![print sobre mim](imagem/sobre.png)
-![print minhas habilidades](imagem/habilidades.png)
-![print projetos](imagem/projetos.png)
-![print contatos](imagem/contatos.png)
-![print opção de contatos](imagem/opçãodecontatos.png)
+![print inicio](img/inicio.png)
+![print sobre mim](img/sobre.png)
+![print minhas habilidades](img/habilidades.png)
+![print projetos](img/projetos.png)
+![print contatos](img/contatos.png)
+![print opção de contatos](img/opçãodecontatos.png)
 
 
 ## Autor
