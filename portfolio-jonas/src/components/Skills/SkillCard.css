@@ -1,0 +1,98 @@
+.skill-item {
+  background: var(--bg-card);
+  padding: 30px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.skill-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-color: var(--primary-color);
+}
+
+.skill-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #fff;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.skill-item:hover .skill-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Icon Colors */
+.skill-icon.html { background: linear-gradient(135deg, #e34c26, #f06529); }
+.skill-icon.css { background: linear-gradient(135deg, #264de4, #2965f1); }
+.skill-icon.js { background: linear-gradient(135deg, #f0db4f, #f7df1e); color: #323330; }
+.skill-icon.bootstrap { background: linear-gradient(135deg, #563d7c, #7952b3); }
+.skill-icon.git { background: linear-gradient(135deg, #f34f29, #f05033); }
+.skill-icon.responsive { background: linear-gradient(135deg, #4CAF50, #8BC34A); }
+.skill-icon.figma { background: linear-gradient(135deg, #f24e1e, #ff7262); }
+.skill-icon.seo { background: linear-gradient(135deg, #4285f4, #34a853); }
+
+.skill-item h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: var(--bg-secondary);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border-radius: 10px;
+  transition: width 1s ease;
+  position: relative;
+}
+
+.progress::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@media (max-width: 768px) {
+  .skill-item {
+    padding: 25px;
+  }
+
+  .skill-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.7rem;
+  }
+}

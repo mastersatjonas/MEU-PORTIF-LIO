@@ -1,0 +1,170 @@
+/* ===== VARIÁVEIS CSS ===== */
+
+:root {
+  --primary-color: #6366f1;      /* Azul principal */
+  --secondary-color: #8b5cf6;    /* Roxo secundário */
+  --bg-primary: #ffffff;         /* Fundo principal */
+  --bg-secondary: #f8fafc;       /* Fundo secundário */
+  --bg-card: #ffffff;            /* Fundo dos cards */
+  --text-primary: #1e293b;       /* Texto principal */
+  --text-secondary: #64748b;     /* Texto secundário */
+  --border-color: #e2e8f0;       /* Cor das bordas */
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-card: #1e293b;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --border-color: #334155;
+}
+
+/* ===== ESTILOS GLOBAIS ===== */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.App {
+  min-height: 100vh;
+  width: 100%;
+}
+
+main {
+  padding-top: 0;
+}
+
+.interface {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/* ===== UTILITÁRIOS ===== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== ANIMAÇÕES ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* ===== RESPONSIVE UTILITIES ===== */
+@media (max-width: 1400px) {
+  .interface {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .interface {
+    padding: 0 6%;
+  }
+}
+
+@media (max-width: 480px) {
+  .interface {
+    padding: 0 5%;
+  }
+}
+
+/* ===== SELECTION ===== */
+::selection {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+::-moz-selection {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+/* ===== FOCUS VISIBLE ===== */
+*:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* ===== LOADER (OPCIONAL) ===== */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.loader::after {
+  content: '';
+  width: 50px;
+  height: 50px;
+  border: 5px solid var(--border-color);
+  border-top-color: var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===== TRANSIÇÕES SUAVES ===== */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}

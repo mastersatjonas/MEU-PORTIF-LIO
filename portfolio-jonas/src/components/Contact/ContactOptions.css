@@ -1,0 +1,36 @@
+/* Este CSS é compartilhado com ContactQuick.css */
+/* Você pode importar ContactQuick.css no componente ContactOptions.js */
+/* Ou usar as classes do ContactQuick.css diretamente */
+
+/* Se quiser estilos específicos adicionais para ContactOptions */
+.contato.secondary {
+  background: var(--bg-secondary);
+}
+
+.contato.secondary::before {
+  display: none;
+}
+
+.contato.secondary .txt-contato h3,
+.contato.secondary .txt-contato p {
+  color: var(--text-primary);
+}
+
+.contato.secondary .icons-contato button {
+  background: var(--bg-card);
+  border-color: var(--border-color);
+}
+
+.contato.secondary .icons-contato button i,
+.contato.secondary .icons-contato button p {
+  color: var(--text-primary);
+}
+
+.contato.secondary .icons-contato button:hover {
+  background: var(--primary-color);
+}
+
+.contato.secondary .icons-contato button:hover i,
+.contato.secondary .icons-contato button:hover p {
+  color: #fff;
+}

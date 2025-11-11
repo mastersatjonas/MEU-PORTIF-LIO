@@ -1,0 +1,86 @@
+.projetos {
+  padding: 100px 0;
+  background: var(--bg-secondary);
+  position: relative;
+}
+
+.projetos .interface {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/* Filtro de Projetos */
+.filtro-projetos {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 40px 0 60px;
+}
+
+.filtro-btn {
+  padding: 12px 30px;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 2px solid var(--border-color);
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filtro-btn:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.filtro-btn.ativo {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 5px 20px rgba(99, 102, 241, 0.3);
+}
+
+/* Grid de Projetos */
+.instrucoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projetos {
+    padding: 80px 0;
+  }
+
+  .filtro-projetos {
+    gap: 10px;
+    margin: 30px 0 40px;
+  }
+
+  .filtro-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .instrucoes {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .filtro-projetos {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filtro-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,135 @@
+footer {
+  background: var(--bg-card);
+  padding: 60px 0 30px;
+  border-top: 1px solid var(--border-color);
+}
+
+footer .interface {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/* Top Footer - Social Media */
+.top-footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.top-footer button {
+  width: 50px;
+  height: 50px;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.top-footer button:hover {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+  transform: translateY(-5px) rotate(5deg);
+}
+
+/* Middle Footer - Links */
+.middle-footer {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+  padding: 35px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.footer-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--primary-color);
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+/* Bottom Footer - Copyright */
+.bottom-footer {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.bottom-footer p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  footer {
+    padding: 50px 0 25px;
+  }
+
+  .top-footer {
+    gap: 15px;
+    padding-bottom: 30px;
+  }
+
+  .top-footer button {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+
+  .middle-footer {
+    gap: 20px;
+    padding: 25px 0;
+  }
+
+  .footer-link {
+    font-size: 0.95rem;
+  }
+
+  .bottom-footer {
+    padding-top: 25px;
+  }
+
+  .bottom-footer p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .middle-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}

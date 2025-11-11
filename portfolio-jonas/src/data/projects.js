@@ -1,0 +1,81 @@
+export const projectsData = [
+  {
+    id: 1,
+    title: "Academia",
+    category: "web",
+    description: "Site completo para academia com área de membros, agendamento de aulas e planos de treinamento personalizados.",
+    image: "/img/academia.png",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+    links: {
+      demo: "#",  // ← COLE LINK AQUI
+      code: "https://github.com/mastersatjonas/Projeto-Academia"  // ← COLE LINK DO GITHUB AQUI
+    }
+  },
+  {
+    id: 2,
+    title: "Mario Bros",
+    category: "web",
+    description: "Landing page inspirada no universo do Mario Bros, com animações interativas e design responsivo.",
+    image: "/img/mario.png",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+    links: {
+      demo: "#",  // ← COLE LINK AQUI
+      code: "https://github.com/mastersatjonas/1-projeto-Mario-Bros"  // ← COLE LINK DO GITHUB AQUI
+    }
+  },
+  {
+    id: 3,
+    title: "Hamburgueria",
+    category: "web",
+    description: "Landing page inspirada no universo de lanchonetes, com animações interativas e design responsivo.",
+    image: "/img/hamburg.png",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+    links: {
+      demo: "#",  // ← COLE LINK AQUI
+      code: "https://github.com/mastersatjonas/projeto-hamburgueria"  // ← COLE LINK DO GITHUB AQUI
+    }
+  },
+  {
+    id: 4,
+    title: "Site G&J",
+    category: "web",
+    description: "Landing page inspirada no universo de empresas prestadora de serviços, com animações interativas e design responsivo.",
+    image: "/img/site Gej.png",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+    links: {
+      demo: "https://gjrefrigeracao.netlify.app/",   // ← COLE LINK AQUI
+      code: "https://github.com/mastersatjonas/projeto-gej"  // ← COLE LINK DO GITHUB AQUI
+    }
+  },
+  {
+    id: 5,
+    title: "Conversor de Moedas",
+    category: "web",
+    description: "Landing page inspirada no universo de pesquisas web, com animações interativas e design responsivo.",
+    image: "/img/conversor de moedas.png",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+    links: {
+      demo: "https://moedas-converter.netlify.app/", // ← COLE LINK AQUI
+      code: "https://github.com/mastersatjonas/conversor-moedas"  // ← COLE LINK DO GITHUB AQUI
+    }
+  },
+  {
+    id: 6,
+    title: "Site Minha Radio On",
+    category: "web",
+    description: "💡 O site conta com: 🎵 Player ao vivo via YouTube integrado. 📅 Programação diária organizada. ℹ️ Seção sobre a rádio. 🌐 Links diretos para redes sociais. 📱 Design totalmente responsivo até telas de 360px.",
+    image: "/img/radio.png",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+    links: {
+      demo: "https://itbradio.netlify.app/",  // ← COLE LINK AQUI
+      code: "https://github.com/mastersatjonas/radio-online"  // ← COLE LINK DO GITHUB AQUI
+    }
+  }
+];
+
+export const categories = [
+  { id: 'todos', label: 'Todos' },
+  { id: 'web', label: 'Web' },
+  { id: 'app', label: 'Aplicativos' },
+  { id: 'design', label: 'Design' }
+];

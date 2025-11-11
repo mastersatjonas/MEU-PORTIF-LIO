@@ -1,0 +1,174 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--bg-primary);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+header .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 4%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Logo Section */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-branca {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-branca {
+  transform: rotate(360deg);
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text .nome {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.logo-text .subtitulo {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+/* Menu Desktop */
+.menu-desktop nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.menu-desktop nav ul li a {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 5px 0;
+}
+
+.menu-desktop nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.menu-desktop nav ul li a:hover::after,
+.menu-desktop nav ul li a.active::after {
+  width: 100%;
+}
+
+.menu-desktop nav ul li a:hover,
+.menu-desktop nav ul li a.active {
+  color: var(--primary-color);
+}
+
+/* Header Actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-contato button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-contato button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-contato button i {
+  font-size: 1.2rem;
+}
+
+/* Menu Mobile Button */
+.btn-abrir-menu {
+  display: none;
+  font-size: 2rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-abrir-menu:hover {
+  color: var(--primary-color);
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .menu-desktop {
+    display: none;
+  }
+
+  .btn-abrir-menu {
+    display: block;
+  }
+
+  .btn-contato {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  header .interface {
+    padding: 15px 5%;
+  }
+
+  .logo-branca {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo-text .nome {
+    font-size: 1rem;
+  }
+
+  .logo-text .subtitulo {
+    font-size: 0.75rem;
+  }
+}
