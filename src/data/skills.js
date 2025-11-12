@@ -52,11 +52,24 @@ export const skillsData = {
         color: "figma"
       },
       {
-        name: "SEO",
-        icon: "bi-search",
-        level: 70,
-        color: "seo"
-      }
+        name: "React",
+        icon: "bi-filetype-jsx",
+        level: 85,
+        color: "react"
+      },
+      {
+  name: "Node.js",
+  icon: "bi-code-square",
+  level: 75,
+  color: "nodejs"
+},
+{
+  name: "MySQL",
+  icon: "bi-database",
+  level: 80,
+  color: "mysql"
+},
+
     ]
   }
 };
