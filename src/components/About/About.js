@@ -3,6 +3,7 @@ import SectionTitle from '../common/SectionTitle';
 import { contactInfo } from '../../data/contact';
 import './About.css';
 
+
 const About = () => {
   return (
     <section className="sobre" id="sobre" role="region" aria-label="Sobre Jonas Fernandes">
