@@ -83,6 +83,19 @@ export const projectsData = [
       code: "https://github.com/mastersatjonas/bot-trader"
     }
   }
+],
+{
+    id: 8,
+    title: "G&J Bot",
+    category: "app",
+    description: "Assistente virtual inteligente para a G&J Refrigeração com IA (LLaMA 3 via Groq), capaz de responder dúvidas, coletar dados para agendamento de visitas técnicas e encaminhar clientes diretamente para o WhatsApp.",
+    image: "/img/gjBot.png",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Groq API", "LLaMA 3"],
+    links: {
+      demo: "#",
+      code: "https://github.com/mastersatjonas/GEJ/blob/main/gj-chat-bot.html"
+    }
+  }
 ];
 
 export const categories = [
