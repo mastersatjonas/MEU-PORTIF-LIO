@@ -7,8 +7,8 @@ export const projectsData = [
     image: "/img/academia.png",
     technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
     links: {
-      demo: "#",  // ← COLE LINK AQUI
-      code: "https://github.com/mastersatjonas/Projeto-Academia"  // ← COLE LINK DO GITHUB AQUI
+      demo: "#",
+      code: "https://github.com/mastersatjonas/Projeto-Academia"
     }
   },
   {
@@ -19,8 +19,8 @@ export const projectsData = [
     image: "/img/mario.png",
     technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
     links: {
-      demo: "#",  // ← COLE LINK AQUI
-      code: "https://github.com/mastersatjonas/1-projeto-Mario-Bros"  // ← COLE LINK DO GITHUB AQUI
+      demo: "#",
+      code: "https://github.com/mastersatjonas/1-projeto-Mario-Bros"
     }
   },
   {
@@ -31,8 +31,8 @@ export const projectsData = [
     image: "/img/hamburg.png",
     technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
     links: {
-      demo: "#",  // ← COLE LINK AQUI
-      code: "https://github.com/mastersatjonas/projeto-hamburgueria"  // ← COLE LINK DO GITHUB AQUI
+      demo: "#",
+      code: "https://github.com/mastersatjonas/projeto-hamburgueria"
     }
   },
   {
@@ -43,8 +43,8 @@ export const projectsData = [
     image: "/img/site Gej.png",
     technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
     links: {
-      demo: "https://gjrefrigeracao.netlify.app/",   // ← COLE LINK AQUI
-      code: "https://github.com/mastersatjonas/projeto-gej"  // ← COLE LINK DO GITHUB AQUI
+      demo: "https://gjrefrigeracao.netlify.app/",
+      code: "https://github.com/mastersatjonas/projeto-gej"
     }
   },
   {
@@ -55,8 +55,8 @@ export const projectsData = [
     image: "/img/conversor de moedas.png",
     technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
     links: {
-      demo: "https://moedas-converter.netlify.app/", // ← COLE LINK AQUI
-      code: "https://github.com/mastersatjonas/conversor-moedas"  // ← COLE LINK DO GITHUB AQUI
+      demo: "https://moedas-converter.netlify.app/",
+      code: "https://github.com/mastersatjonas/conversor-moedas"
     }
   },
   {
@@ -67,8 +67,20 @@ export const projectsData = [
     image: "/img/radio.png",
     technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
     links: {
-      demo: "https://itbradio.netlify.app/",  // ← COLE LINK AQUI
-      code: "https://github.com/mastersatjonas/radio-online"  // ← COLE LINK DO GITHUB AQUI
+      demo: "https://itbradio.netlify.app/",
+      code: "https://github.com/mastersatjonas/radio-online"
+    }
+  },
+  {
+    id: 7,
+    title: "BotTrader AI",
+    category: "app",
+    description: "Bot de trading automatizado com inteligência artificial que analisa múltiplos ativos em tempo real usando indicadores técnicos como RSI, MACD, Bollinger Bands, EMA e Stochastic, enviando sinais e executando operações via Telegram.",
+    image: "/img/BotTraderIA.png",
+    technologies: ["Node.js", "JavaScript", "Puppeteer", "Telegram API", "Análise Técnica"],
+    links: {
+      demo: "#",
+      code: "https://github.com/mastersatjonas/bot-trader"
     }
   }
 ];
