@@ -83,8 +83,8 @@ export const projectsData = [
       code: "https://github.com/mastersatjonas/bot-trader"
     }
   }
-],
-{
+  ,
+  {
     id: 8,
     title: "G&J Bot",
     category: "app",
