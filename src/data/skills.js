@@ -22,16 +22,16 @@ export const skillsData = {
         color: "js"
       },
       {
-        name: "Bootstrap",
-        icon: "bi-bootstrap",
-        level: 80,
-        color: "bootstrap"
-      },
-      {
         name: "React",
         icon: "bi-filetype-jsx",
         level: 85,
         color: "react"
+      },
+      {
+        name: "Bootstrap",
+        icon: "bi-bootstrap",
+        level: 80,
+        color: "bootstrap"
       },
       {
         name: "Vite",
@@ -48,28 +48,10 @@ export const skillsData = {
     ]
   },
 
-  tools: {
-    title: "Ferramentas & Outros",
-    icon: "bi-tools",
+  backend: {
+    title: "Back-end & Banco de Dados",
+    icon: "bi-server",
     skills: [
-      {
-        name: "Git",
-        icon: "bi-git",
-        level: 80,
-        color: "git"
-      },
-      {
-        name: "GitHub",
-        icon: "bi-github",
-        level: 80,
-        color: "github"
-      },
-      {
-        name: "Figma",
-        icon: "bi-vector-pen",
-        level: 65,
-        color: "figma"
-      },
       {
         name: "Node.js",
         icon: "bi-code-square",
@@ -81,6 +63,18 @@ export const skillsData = {
         icon: "bi-diagram-3",
         level: 75,
         color: "express"
+      },
+      {
+        name: "API REST",
+        icon: "bi-braces",
+        level: 80,
+        color: "api"
+      },
+      {
+        name: "Consumo de API",
+        icon: "bi-cloud-arrow-down",
+        level: 80,
+        color: "api"
       },
       {
         name: "MySQL",
@@ -101,16 +95,35 @@ export const skillsData = {
         color: "render"
       },
       {
-        name: "API REST",
-        icon: "bi-braces",
+        name: "Dashboard/Admin Panel",
+        icon: "bi-speedometer2",
         level: 80,
-        color: "api"
+        color: "dashboard"
+      }
+    ]
+  },
+
+  tools: {
+    title: "Ferramentas & Deploy",
+    icon: "bi-tools",
+    skills: [
+      {
+        name: "Git",
+        icon: "bi-git",
+        level: 80,
+        color: "git"
       },
       {
-        name: "Consumo de API",
-        icon: "bi-cloud-arrow-down",
+        name: "GitHub",
+        icon: "bi-github",
         level: 80,
-        color: "api"
+        color: "github"
+      },
+      {
+        name: "Figma",
+        icon: "bi-vector-pen",
+        level: 65,
+        color: "figma"
       },
       {
         name: "Postman",
@@ -141,12 +154,6 @@ export const skillsData = {
         icon: "bi-whatsapp",
         level: 85,
         color: "whatsapp"
-      },
-      {
-        name: "Dashboard/Admin Panel",
-        icon: "bi-speedometer2",
-        level: 80,
-        color: "dashboard"
       }
     ]
   }
