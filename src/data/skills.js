@@ -29,6 +29,7 @@ export const skillsData = {
       }
     ]
   },
+
   tools: {
     title: "Ferramentas & Outros",
     icon: "bi-tools",
@@ -58,18 +59,41 @@ export const skillsData = {
         color: "react"
       },
       {
-  name: "Node.js",
-  icon: "bi-code-square",
-  level: 75,
-  color: "nodejs"
-},
-{
-  name: "MySQL",
-  icon: "bi-database",
-  level: 80,
-  color: "mysql"
-},
-
+        name: "Node.js",
+        icon: "bi-code-square",
+        level: 75,
+        color: "nodejs"
+      },
+      {
+        name: "MySQL",
+        icon: "bi-database",
+        level: 80,
+        color: "mysql"
+      },
+      {
+        name: "PostgreSQL",
+        icon: "bi-database-fill-gear",
+        level: 75,
+        color: "postgresql"
+      },
+      {
+        name: "Render Database",
+        icon: "bi-database-check",
+        level: 75,
+        color: "render"
+      },
+      {
+        name: "API REST",
+        icon: "bi-braces",
+        level: 80,
+        color: "api"
+      },
+      {
+        name: "Consumo de API",
+        icon: "bi-cloud-arrow-down",
+        level: 80,
+        color: "api"
+      }
     ]
   }
 };
