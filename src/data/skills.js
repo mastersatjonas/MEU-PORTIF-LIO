@@ -26,6 +26,24 @@ export const skillsData = {
         icon: "bi-bootstrap",
         level: 80,
         color: "bootstrap"
+      },
+      {
+        name: "React",
+        icon: "bi-filetype-jsx",
+        level: 85,
+        color: "react"
+      },
+      {
+        name: "Vite",
+        icon: "bi-lightning-charge",
+        level: 75,
+        color: "vite"
+      },
+      {
+        name: "Responsividade Mobile",
+        icon: "bi-phone",
+        level: 90,
+        color: "responsive"
       }
     ]
   },
@@ -41,10 +59,10 @@ export const skillsData = {
         color: "git"
       },
       {
-        name: "Design Responsivo",
-        icon: "bi-phone",
-        level: 90,
-        color: "responsive"
+        name: "GitHub",
+        icon: "bi-github",
+        level: 80,
+        color: "github"
       },
       {
         name: "Figma",
@@ -53,16 +71,16 @@ export const skillsData = {
         color: "figma"
       },
       {
-        name: "React",
-        icon: "bi-filetype-jsx",
-        level: 85,
-        color: "react"
-      },
-      {
         name: "Node.js",
         icon: "bi-code-square",
         level: 75,
         color: "nodejs"
+      },
+      {
+        name: "Express.js",
+        icon: "bi-diagram-3",
+        level: 75,
+        color: "express"
       },
       {
         name: "MySQL",
@@ -93,6 +111,42 @@ export const skillsData = {
         icon: "bi-cloud-arrow-down",
         level: 80,
         color: "api"
+      },
+      {
+        name: "Postman",
+        icon: "bi-send",
+        level: 70,
+        color: "postman"
+      },
+      {
+        name: "Netlify",
+        icon: "bi-cloud-check",
+        level: 85,
+        color: "netlify"
+      },
+      {
+        name: "Render",
+        icon: "bi-cloud-upload",
+        level: 75,
+        color: "render"
+      },
+      {
+        name: "Deploy Fullstack",
+        icon: "bi-rocket-takeoff",
+        level: 75,
+        color: "deploy"
+      },
+      {
+        name: "Integração WhatsApp",
+        icon: "bi-whatsapp",
+        level: 85,
+        color: "whatsapp"
+      },
+      {
+        name: "Dashboard/Admin Panel",
+        icon: "bi-speedometer2",
+        level: 80,
+        color: "dashboard"
       }
     ]
   }
