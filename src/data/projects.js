@@ -184,21 +184,9 @@ export const projectsData = [
       code: "#"
     }
   },
-  {
-    id: 15,
-    title: "Quick Route",
-    category: "app",
-    description:
-      "Projeto de sistema de corridas locais, com área para motorista, solicitação de corrida, estimativa de tarifa e interface responsiva.",
-    image: "/img/quick-route.png",
-    technologies: ["React", "Vite", "Tailwind CSS", "Node.js"],
-    links: {
-      demo: "#",
-      code: "#"
-    }
-  },
+  
    {
-    id: 16,
+    id: 15,
     title: "App de Orçamentos",
     category: "app",
     description:
