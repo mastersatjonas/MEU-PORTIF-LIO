@@ -196,7 +196,7 @@ export const projectsData = [
       demo: "#",
       code: "#"
     }
-  }
+  },
    {
     id: 16,
     title: "App de Orçamentos",
