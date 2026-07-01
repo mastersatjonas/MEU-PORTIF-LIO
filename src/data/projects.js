@@ -197,6 +197,19 @@ export const projectsData = [
       code: "#"
     }
   }
+   {
+    id: 16,
+    title: "App de Orçamentos",
+    category: "app",
+    description:
+      "Aplicativo mobile para criação e gestão de orçamentos técnicos, com cadastro de clientes, seleção de serviços, adição de itens, cálculo automático do valor total e organização dos orçamentos salvos.",
+    image: "/img/App-Orçamento.png",
+    technologies: ["React Native", "Expo", "JavaScript", "UI/UX"],
+    links: {
+      demo: "#",
+      code: "#"
+    }
+  }
 ];
 
 export const categories = [
