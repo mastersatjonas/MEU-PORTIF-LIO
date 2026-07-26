@@ -6,7 +6,8 @@ export const skillsData = {
       { name: "HTML5", icon: "bi-filetype-html", level: 90, color: "#e34c26" },
       { name: "CSS3", icon: "bi-filetype-css", level: 85, color: "#264de4" },
       { name: "JavaScript", icon: "bi-filetype-js", level: 80, color: "#f0db4f" },
-      { name: "React", icon: "bi-code", level: 75, color: "#61dafb" }
+      { name: "React", icon: "bi-code", level: 75, color: "#61dafb" },
+      { name: "Bootstrap", icon: "bi-bootstrap", level: 85, color: "#7952b3" }
     ]
   },
   backend: {
@@ -24,7 +25,8 @@ export const skillsData = {
     skills: [
       { name: "Git", icon: "bi-git", level: 85, color: "#f05032" },
       { name: "GitHub", icon: "bi-github", level: 85, color: "#ffffff" },
-      { name: "Netlify", icon: "bi-cloud-upload", level: 80, color: "#00c7b7" }
+      { name: "Netlify", icon: "bi-cloud-upload", level: 80, color: "#00c7b7" },
+      { name: "Render", icon: "bi-cloud", level: 75, color: "#46e3b7" }
     ]
   }
 };
