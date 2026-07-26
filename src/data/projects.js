@@ -132,21 +132,9 @@ export const projectsData = [
       code: "#"
     }
   },
+ 
   {
     id: 11,
-    title: "Bolão Copa 2026",
-    category: "app",
-    description:
-      "Sistema de bolão esportivo com cadastro de apostadores, palpites, ranking automático, painel administrativo e controle de resultados dos jogos.",
-    image: "/img/bolao-copa.png",
-    technologies: ["HTML5", "CSS3", "JavaScript", "Node.js", "PostgreSQL"],
-    links: {
-      demo: "https://bolaoregional.netlify.app/",
-      code: "https://github.com/mastersatjonas/bolao-copa-2026"
-    }
-  },
-  {
-    id: 12,
     title: "MasterVendas PDV",
     category: "app",
     description:
@@ -159,7 +147,7 @@ export const projectsData = [
     }
   },
   {
-    id: 13,
+    id: 12,
     title: "FernandesDev Cursos",
     category: "web",
     description:
@@ -171,22 +159,10 @@ export const projectsData = [
       code: "#"
     }
   },
-  {
-    id: 14,
-    title: "Inscrição Copa La Fronteira",
-    category: "web",
-    description:
-      "Página de inscrição online para torneio de futebol, com regulamento, formulário de equipes, geração de ficha e layout personalizado.",
-    image: "/img/inscricao-la-fronteira.png",
-    technologies: ["HTML5", "CSS3", "JavaScript"],
-    links: {
-      demo: "#",
-      code: "#"
-    }
-  },
+  
   
    {
-    id: 15,
+    id: 13,
     title: "App de Orçamentos",
     category: "app",
     description:
