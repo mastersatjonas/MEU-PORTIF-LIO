@@ -1,76 +1,30 @@
-import React from 'react';
-import SectionTitle from '../common/SectionTitle';
-import SkillCard from './SkillCard';
-import { skillsData } from '../../data/skills';
-import './Skills.css';
-
-const Skills = () => {
-  return (
-    <section className="habilidades" id="habilidades" role="region" aria-label="Habilidades de Jonas Fernandes">
-      <div className="interface">
-        <SectionTitle highlight="Habilidades">Minhas</SectionTitle>
-
-        <div className="skills-container">
-          {/* Frontend Skills */}
-          <div className="skill-category" data-aos="fade-up" data-aos-delay="100">
-            <h3>
-              <i className={`bi ${skillsData.frontend.icon}`}></i> {skillsData.frontend.title}
-            </h3>
-
-            <div className="skills-grid">
-              {skillsData.frontend.skills.map((skill, index) => (
-                <SkillCard
-                  key={index}
-                  name={skill.name}
-                  icon={skill.icon}
-                  level={skill.level}
-                  color={skill.color}
-                />
-              ))}
-            </div>
-          </div>
-
-          {/* Backend & Database Skills */}
-          <div className="skill-category" data-aos="fade-up" data-aos-delay="200">
-            <h3>
-              <i className={`bi ${skillsData.backend.icon}`}></i> {skillsData.backend.title}
-            </h3>
-
-            <div className="skills-grid">
-              {skillsData.backend.skills.map((skill, index) => (
-                <SkillCard
-                  key={index}
-                  name={skill.name}
-                  icon={skill.icon}
-                  level={skill.level}
-                  color={skill.color}
-                />
-              ))}
-            </div>
-          </div>
-
-          {/* Tools & Deploy Skills */}
-          <div className="skill-category" data-aos="fade-up" data-aos-delay="300">
-            <h3>
-              <i className={`bi ${skillsData.tools.icon}`}></i> {skillsData.tools.title}
-            </h3>
-
-            <div className="skills-grid">
-              {skillsData.tools.skills.map((skill, index) => (
-                <SkillCard
-                  key={index}
-                  name={skill.name}
-                  icon={skill.icon}
-                  level={skill.level}
-                  color={skill.color}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+export const skillsData = {
+  frontend: {
+    icon: "bi-code-slash",
+    title: "Frontend",
+    skills: [
+      { name: "HTML5", icon: "bi-filetype-html", level: 90, color: "#e34c26" },
+      { name: "CSS3", icon: "bi-filetype-css", level: 85, color: "#264de4" },
+      { name: "JavaScript", icon: "bi-filetype-js", level: 80, color: "#f0db4f" },
+      { name: "React", icon: "bi-code", level: 75, color: "#61dafb" }
+    ]
+  },
+  backend: {
+    icon: "bi-server",
+    title: "Backend & Database",
+    skills: [
+      { name: "Node.js", icon: "bi-hdd-network", level: 80, color: "#3c873a" },
+      { name: "Express", icon: "bi-gear", level: 75, color: "#ffffff" },
+      { name: "PostgreSQL", icon: "bi-database", level: 70, color: "#336791" }
+    ]
+  },
+  tools: {
+    icon: "bi-tools",
+    title: "Ferramentas & Deploy",
+    skills: [
+      { name: "Git", icon: "bi-git", level: 85, color: "#f05032" },
+      { name: "GitHub", icon: "bi-github", level: 85, color: "#ffffff" },
+      { name: "Netlify", icon: "bi-cloud-upload", level: 80, color: "#00c7b7" }
+    ]
+  }
 };
-
-export default Skills;
