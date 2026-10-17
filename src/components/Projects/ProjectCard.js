@@ -7,10 +7,25 @@ const ProjectCard = ({ project }) => {
       'HTML5': 'bi-filetype-html',
       'CSS3': 'bi-filetype-css',
       'JavaScript': 'bi-filetype-js',
-      'Bootstrap': 'bi-bootstrap'
+      'Bootstrap': 'bi-bootstrap',
+      // Novos ícones (Bootstrap Icons) — para projetos com backend
+      'React': 'bi-filetype-jsx',
+      'Node.js': 'bi-server',
+      'Express': 'bi-server',
+      'PostgreSQL': 'bi-database',
+      'API REST': 'bi-braces',
+      'Netlify': 'bi-cloud',
+      'Render': 'bi-cloud'
     };
     return icons[tech] || 'bi-code';
   };
+
+  // O botão "Ver Código" só aparece se o projeto tiver link de código
+  // (links vazios ou "#" escondem o botão: útil para projetos de clientes
+  // com repositório privado)
+  const temCodigo = Boolean(
+    project.links && project.links.code && project.links.code !== '#'
+  );
 
   return (
     <article 
@@ -37,15 +52,17 @@ const ProjectCard = ({ project }) => {
             >
               <i className="bi bi-eye"></i> Ver Projeto
             </a>
-            <a 
-              href={project.links.code} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="btn-ver-codigo"
-              tabIndex="-1"
-            >
-              <i className="bi bi-code-slash"></i> Ver Código
-            </a>
+            {temCodigo && (
+              <a 
+                href={project.links.code} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn-ver-codigo"
+                tabIndex="-1"
+              >
+                <i className="bi bi-code-slash"></i> Ver Código
+              </a>
+            )}
           </div>
         </div>
       </div>
