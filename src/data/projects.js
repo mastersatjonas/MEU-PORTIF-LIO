@@ -111,11 +111,11 @@ export const projectsData = [
     title: "LA FRONTEIRA ITB",
     category: "web",
     description:
-      "Site oficial do time La Fronteira ITB, com páginas de elenco, comissão técnica, jogos, galeria, patrocinadores, TV do time e contato.",
+      "Site oficial do clube La Fronteira ITB, com atleta em destaque, elenco dinâmico carregado por API, comissão técnica, jogos, galeria, patrocinadores, hino e formulário de contato.",
     image: "/img/la-fronteira.png",
-    technologies: ["HTML5", "CSS3", "JavaScript", "Node.js"],
+    technologies: ["HTML5", "CSS3", "JavaScript", "Node.js", "PostgreSQL"],
     links: {
-      demo: "#",
+      demo: "https://la-fronteira.netlify.app/",
       code: "#"
     }
   },
@@ -132,7 +132,7 @@ export const projectsData = [
       code: "#"
     }
   },
- 
+
   {
     id: 11,
     title: "MasterVendas PDV",
@@ -159,9 +159,8 @@ export const projectsData = [
       code: "#"
     }
   },
-  
-  
-   {
+
+  {
     id: 13,
     title: "App de Orçamentos",
     category: "app",
